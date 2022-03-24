@@ -20,7 +20,7 @@ h1 {
 }
 ```
 
-Here we are writing our media queries mobile first. This means the styles for small devices (like phones) are defined first, such as our font size of 2rem for h1 elements. Then a wider device is targeted with a media query that increases the font size of h1 elements to 2.5rem when the viewport width is 720px or greater. And then another one, increasing to 3rem for viewports 1200px or wider.
+Here we are writing our media queries _mobile first_. This means the styles for small devices (like phones) are defined first, such as our font size of `2rem` for `h1` elements. Then a wider device is targeted with a media query that increases the font size of h1 elements to `2.5rem` when the viewport width is `720px` or greater. And then another one, increasing to `3rem` for viewports `1200px` or wider.
 
 So what are the issues with this approach?
 
@@ -49,7 +49,7 @@ Perhaps you used quite complex selectors that now need to be repeated for each m
 
 Here’s the above two examples but written to take advantage of SCSS’s nesting of media queries:
 
-```css
+```scss
 h1 {
   font-size: 2rem;
 
@@ -79,7 +79,7 @@ The result is very direct — these rules have these specific media query overri
 
 In summary, by redefining our rules inside media queries they have a lot of responsibility. They contain knowledge about our selectors. They override some rules but usually not all of them.
 
-Varying CSS custom properties
+## Varying CSS custom properties
 
 So what’s the alternative? If we start using custom properties (aka CSS variables), which we can do if we no longer support Internet Explorer, then our media queries can take on a lot less responsibility and thereby be a lot simpler.
 
