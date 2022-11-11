@@ -1,4 +1,4 @@
-# Patrick Smith — Product Developer
+# Patrick Smith — Product Developer & Design Engineer
 
 - 💡 I'm working on [collected.press](https://collected.press/) to create buildless sites and blogs.
 - 🔭 I’m currently writing up my conceptual approach to UI development at [components.guide](https://components.guide/).
