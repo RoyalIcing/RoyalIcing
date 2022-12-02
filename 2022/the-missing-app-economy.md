@@ -2,7 +2,7 @@
 date: 2022-02-14
 ---
 
-# The missing app economy
+# The Missing App Economy
 
 In the late 90s Steve Jobs was faced with a dilemma. Apple’s charismatic CEO couldn’t convince Adobe and Microsoft, makers of Photoshop and Excel, to make software for Apple’s upcoming operating system. Missing a ‘killer app’ like Photoshop on the Mac meant many people would buy a Windows PC instead. Apple conceded by investing substantial engineering effort in ‘Carbon’, a backwards-compatible software layer added to both their old and new operating systems. This stopgap gave Apple’s most important third-party developers a bridge from one system to the next, and Apple a bridge from one century to the next. 
 
