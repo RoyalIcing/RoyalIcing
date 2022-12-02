@@ -15,9 +15,9 @@ I’d like to propose an alternative language, from the user’s experience:
 5. User can scroll
 6. User can zoom
 7. User can interact
-  - User _thinks_ they can interact
-  - User _knows_ they can interact (from previous experience)
-  - User _actually_ successful interacted
+    - User _thinks_ they can interact
+    - User _knows_ they can interact (from previous experience)
+    - User _actually_ successful interacted
 8. User can share
 9. User can close
 
