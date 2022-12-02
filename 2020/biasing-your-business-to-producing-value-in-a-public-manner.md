@@ -2,6 +2,8 @@
 date: 2020-09-12
 ---
 
+# Biasing your business to producing value in a public manner
+
 [Some ancient 2011 advice](https://www.kalzumeus.com/2011/06/17/software-businesses-in-5-hours-a-week-microconf-2010-presentation-1-hour/) from Patrick McKenzie:
 
 > Businesses create value with almost everything they do.  The lion’s share of the value is, like an iceberg, below the waterline: it cannot be seen from anywhere outside the business.  Create more value than you capture, certainly, but get the credit for doing so, both from Google and from everybody else.  This means biasing your business to producing value in a public manner.  Did you write software not core to  your line of business?  Great, OSS it.  Get the credit.  Have you learned something novel about your customers or industry?  Write about it.  Get the credit.  Are your business’ processes worthy of emulation?  Spread what you know.  Get the credit.
