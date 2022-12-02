@@ -1,6 +1,6 @@
 - [Home](/)
-- [2020](/2020)
-- [2021](/2021)
 - [2022](/2022)
+- [2021](/2021)
+- [2020](/2020)
 - [Twitter](https://twitter.com/royalicing)
 - [GitHub](https://github.com/RoyalIcing)
