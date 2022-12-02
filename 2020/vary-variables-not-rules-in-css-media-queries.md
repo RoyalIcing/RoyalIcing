@@ -1,3 +1,7 @@
+---
+date: 2020-11-24
+---
+
 # Vary variables not rules in CSS media queries
 
 A common pattern you’ll see when implementing responsive design with CSS is to redefine rules in media queries:
