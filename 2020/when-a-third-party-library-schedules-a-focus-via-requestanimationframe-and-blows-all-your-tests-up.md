@@ -1,3 +1,7 @@
+---
+date: 2020-05-28
+---
+
 # When a third party library schedules a focus via `requestAnimationFrame()` and blows all your tests up
 
 The Reach UI components are great. They offer accessible components that you’ll often need when building web apps — such as modal dialogs, menus, tabs and more. It’s also popular and therefore has been battled-tested to work with a range of clients.
