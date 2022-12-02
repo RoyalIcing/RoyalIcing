@@ -1,3 +1,8 @@
+---
+title: Mocking window.location in Jest
+date: 2021-05-21
+---
+
 # Mocking `window.location` in Jest
 
 It’s sometimes necessary to mock `window.location` in Jest tests. This could because you want to know when `window.location.reload()` is called, or one of its other methods (`.assign()`, `.replace()`).
