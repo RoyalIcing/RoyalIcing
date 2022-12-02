@@ -1,3 +1,5 @@
+# When Can Users Do X?
+
 Lighthouse and Core Web Vitals have brought concepts such as Largest Contentful Paint and Time to Interactive into many front-end developer’s lingo.
 
 However, these three-letter-acronyms are easy to get confused with each other. What’s CLS again? What’s the difference between FID and TTI?
