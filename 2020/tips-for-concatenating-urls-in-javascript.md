@@ -1,3 +1,7 @@
+---
+date: 2020-10-01
+---
+
 # Tips for concatenating URLs in JavaScript
 
 You might have a base URL from configuration, that you then concatenate with paths to produce a full URL. Say an API URL you fetch from.
