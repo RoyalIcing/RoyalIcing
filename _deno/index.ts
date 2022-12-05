@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
-import { serveRequest } from "npm:@collected/press-server@0.2.4";
+import { serveRequest } from "npm:@collected/press-server";
 
 const port = 8080;
 
