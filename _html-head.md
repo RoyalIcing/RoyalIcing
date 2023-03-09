@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--<link rel=stylesheet href="https://abridged.collected.workers.dev/tailwindcss@1.8.10?selectorPattern=^(\.(|sm\\:|md\\:|lg\\:))(m-|mx-|ml-|p-|px-|pt-|pb-|text-|bg-|max-w-|flex|items|justify|space-|block|hidden|border|font-|italic|tracking-|break-|shadow)">-->
+<link rel=stylesheet href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css">
+
+<link rel="stylesheet" href="https://icing.space/wp-content/themes/royalicing/fonts/728649/97244AA2CF2CCFB1E.css">
+
+<!--
+<meta property="og:type" content="<?= esc_attr(littleeagle_ogtype()) ?>">
+<meta property="og:image" content="<?= esc_attr(littleeagle_ogimage()) ?>">
+<meta name="twitter:site" content="@royalicing">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="<?= esc_attr(littleeagle_ogimage()) ?>">
+-->
+
+<title>Royal Icing</title>
+
+<style>
+html {
+  font-size: 125%;
+
+  --pink-900: #3D0014;
+  --pink-500: #ed64a6;
+  --pink-100: #fff5f7;
+  --main-bg: #011627;
+  --main-bg: #00061C;
+  --main-bg: #12000D;
+  --main-text-color: #d6deeb;
+  --main-text-color: #E6EFFC;
+
+  background: var(--main-bg);
+}
+
+.font-display { font-family: "Quarto A", "Quarto B", serif !important; }
+.font-secondary { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
+.font-800 { font-weight: 800; }
+.tracking-tight { letter-spacing: -1px; }
+
+/* body { font-family: "Whitney SSm A", "Whitney SSm B", sans-serif; } */
+/* body { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; } */
+/* body { font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif; } */
+
+body { font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif; }
+
+main {
+  background: var(--main-bg);
+  color: var(--main-text-color);
+}
+
+header[role=banner] {
+  background: #f8f8f8;
+  /* background: var(--main-bg); */
+  /* color: var(--main-text-color); */
+}
+
+/* body { font-family: "Sentinel SSm A", "Sentinel SSm B", sans-serif; } */
+nav li { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
+section, article { letter-spacing: 0.01em; }
+
+main p, main pre {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+main h2 {
+  font-size: 1.25rem;
+  line-height: 1.333;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  letter-spacing: -0.02em;
+}
+main h3 {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+}
+main pre, main code {
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+  font-size: 0.875rem;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+main ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+main ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+main figcaption, .wp-block-image.wp-block-image figcaption {
+  text-align: center;
+  font-size: 0.80rem;
+  color: inherit;
+  opacity: 0.7;
+}
+main blockquote {
+  padding-left: 1rem;
+  font-style: italic;
+  border-left: 0.25rem solid var(--main-text-color);
+}
+main p a, main li a, main .more-link {
+  border-bottom: 1px solid var(--pink-500);
+}
+main p a:hover, main li a:hover, main .more-link:hover {
+  background: var(--pink-100);
+  color: var(--main-bg);
+}
+
+.twitter-tweet { margin: 1.5rem auto; }
+
+pre {
+  background-color: #011627;
+}
+pre > code {
+  color: #fff;
+}
+:not(pre) > code {
+  padding: .1em;
+  font-size: .875rem;
+  white-space: pre-wrap;
+  color: #fff;
+  background-color: #011627;
+  border: 0 solid #e2e8f0;
+  border-radius: .3em;
+}
+
+.comma-separated {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comma-separated li {
+  display: inline;
+}
+.comma-separated li::after {
+  content: ', ';
+}
+.comma-separated li:last-child:after {
+  content: '';
+}
+</style>
+
+</head>

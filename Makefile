@@ -3,3 +3,6 @@ publish: update
 
 update:
 	cd _worker && npm update -S
+
+dev:
+	cd _worker && npm start
