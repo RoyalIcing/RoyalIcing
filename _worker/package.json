@@ -12,6 +12,6 @@
     "deploy": "wrangler publish"
   },
   "dependencies": {
-    "@collected/press-server": "^0.2.8"
+    "@collected/press-server": "^0.3.0"
   }
 }
