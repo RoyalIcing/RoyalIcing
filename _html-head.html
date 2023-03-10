@@ -76,6 +76,9 @@ main {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
+
+    --list-style: disc;
+    --list-padding-left: 1rem;
 }
 
 main p, main pre {
@@ -105,8 +108,8 @@ main pre, main code {
   white-space: pre-wrap;
 }
 main ul {
-  list-style-type: disc;
-  padding-left: 1rem;
+  list-style-type: var(--list-style);
+  padding-left: var(--list-padding-left);
 }
 main ol {
   list-style-type: decimal;
@@ -131,9 +134,22 @@ main p a:hover, main li a:hover, main .more-link:hover {
   color: var(--main-bg);
 }
 
-main nav { font-size: 1.5rem; }
-main nav li [data-date] { display: block; font-size: 0.875rem; margin-bottom: -0.75rem; }
-main nav li a { display: inline-flex; padding: 0.5em 0; font-weight: bold; color: currentColor; }
+main nav {
+  font-size: 1.5rem;
+  --list-style: none;
+  --list-padding-left: 0;
+}
+main nav li [data-date] {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: -0.75rem;
+}
+main nav li a {
+  display: inline-flex;
+  padding: 0.5em 0;
+  font-weight: bold;
+  color: currentColor;
+}
 
 article img {
   display: block;
