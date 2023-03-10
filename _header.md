@@ -1,7 +1,5 @@
 - [Home](/)
-- [2022](/2022)
-- [2021](/2021)
-- [2020](/2020)
+- [Blog](/blog)
 - [Projects](/projects)
 - [Mastodon](https://hachyderm.io/@royalicing)
 - [Twitter](https://twitter.com/royalicing)
