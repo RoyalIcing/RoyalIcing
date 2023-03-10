@@ -51,6 +51,18 @@ ul, ol { margin: 0; padding: 0; }
 main {
   background: var(--main-bg);
   color: var(--main-text-color);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4rem;
+  line-height: 1.5;
+
+  --list-style: disc;
+  --list-padding-left: 1rem;
+
+  --link-border-bottom: 1px solid var(--pink-500);
+  --link-hover-background: var(--pink-100);
+  --link-hover-color: var(--main-bg);
 }
 
 header[role=banner] {
@@ -70,20 +82,6 @@ header[role=banner] ul {
 /* body { font-family: "Sentinel SSm A", "Sentinel SSm B", sans-serif; } */
 nav li { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
 section, article { letter-spacing: 0.01em; }
-
-main {
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-
-    --list-style: disc;
-    --list-padding-left: 1rem;
-
-    --link-border-bottom: 1px solid var(--pink-500);
-    --link-hover-background: var(--pink-100);
-    --link-hover-color: var(--main-bg);
-}
 
 main p, main pre {
   margin-top: 1.5em;
