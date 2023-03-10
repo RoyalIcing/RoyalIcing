@@ -12,7 +12,7 @@ Apple began their journey into people’s pockets twenty years ago with the iPod
 
 This success was repeated on a grander scale with the iPhone and App Store, with ten million downloads of apps in first weekend. Both were more capable versions of their predecessors: the iPhone had a larger screen and faster chips than the iPod, and apps could communicate with the internet and were far more interactive than a song. A wave of software accessible to everyday people followed — Instagram, TikTok, Uber, Airbnb — that took advantage of pocketable, always-online devices.
 
-![Estimated App Store Revenue](apple-app-store-revenue-games-vs-not.png)
+![Estimated App Store Revenue](the-missing-app-economy/apple-app-store-revenue-games-vs-not.png)
 
 However, a recent court case between Apple and Epic Games found that 70% of Apple’s App Store revenue is from games. That leaves only 30% for productivity software used by businesses such as Excel and Photoshop.  Which makes reports from Apple that they have “paid out over $200bn to developers since 2008” much less compelling. According to Sensor Tower, Adobe makes an estimated $10m per month from the App Store, which is roughly 1% of its $1bn total monthly revenue. And Microsoft earns even less from the App Store, even though it makes ten-fold the revenue of Adobe. 
 
