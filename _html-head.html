@@ -79,6 +79,10 @@ main {
 
     --list-style: disc;
     --list-padding-left: 1rem;
+
+    --link-border-bottom: 1px solid var(--pink-500);
+    --link-hover-background: var(--pink-100);
+    --link-hover-color: var(--main-bg);
 }
 
 main p, main pre {
@@ -127,17 +131,18 @@ main blockquote {
   border-left: 0.25rem solid var(--main-text-color);
 }
 main p a, main li a, main .more-link {
-  border-bottom: 1px solid var(--pink-500);
+  border-bottom: var(--link-border-bottom);
 }
 main p a:hover, main li a:hover, main .more-link:hover {
-  background: var(--pink-100);
-  color: var(--main-bg);
+  background: var(--link-hover-background);
+  color: var(--link-hover-color);
 }
 
 main nav {
   font-size: 1.5rem;
   --list-style: none;
   --list-padding-left: 0;
+  --link-border-bottom: none;
 }
 main nav li {
   margin-bottom: 1rem;
