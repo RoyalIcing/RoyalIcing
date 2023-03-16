@@ -1,5 +1,6 @@
 ---
 date: 2023-03-16
+title: Web Assembly allows script tags everywhere
 ---
 
 # Web Assembly allows `<script>` tags everywhere
