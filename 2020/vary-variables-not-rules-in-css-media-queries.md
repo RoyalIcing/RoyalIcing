@@ -149,4 +149,4 @@ p, h1, h2, h3, h4, figure, ul, ol {
 }
 ```
 
-Our CSS rules can be none the wiser to what value a --text-color is under the hood, which is set to white by default and black when the user prefers a light color scheme. Our variables vary and our rules stay the same.
+Our CSS rules can be none the wiser to what value a `--text-color` is under the hood, which is set to white by default and black when the user prefers a light color scheme. Our variables vary and our rules stay the same.
