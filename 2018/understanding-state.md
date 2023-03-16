@@ -14,7 +14,7 @@ In a JavaScript web app, your user’s web browser talks to an API. The API has 
 
 So local state. It’s your web app’s state of the world at a certain time. That world depends on factors, such as which account is signed in, or perhaps whether the user is not signed in, which page they are looking at, and what capabilities their account has.
 
-Loading state
+## Loading state
 
 For your web app to display information, it has to first load it.
 
@@ -30,7 +30,7 @@ Depending on which section you look at, and how you interact within that section
 
 Managing this state, and coordinating the loading of additional or fresher state, is one of the key skills in building web apps.
 
-A step back. A command line app.
+## A step back. A command line app.
 
 Any app that has an interactive user interface has state. Think of PowerPoint and the file that is being viewed, the currently active slide, whether that slide is being edited, viewed with slides listed to the side, or is being presented. All of those variables are state.
 
