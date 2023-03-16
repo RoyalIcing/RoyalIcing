@@ -26,7 +26,7 @@ I want to be able to spin up new sites without having to worry about managing a 
 
 ## Other things
 
-- I wanted to reduce the number of DNS lookups, so I proxy a request to load modern-normalize.css via a `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css` path, fetching it on the edge and then proxying its response back.
+- I wanted to reduce the number of DNS lookups, so I proxy a request to load modern-normalize.css via a `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css` path, fetching it on the edge and then proxying its response back. I do the same for highlight.js’s syntax highlighting CSS.
 - If I wasn’t to come up with Collected Press, I would likely have chosen Astro. I love the HTML-first and server-first approach, and I love the range of integrations. Perhaps there’s a way to make Collected Press work within Astro?
 - The styles for my site are in single `<style>` tag in the `<head>`. However, you can add `.css` files or images and have those be served up.
 - I initially had a single server that could load from any GitHub repository, which mean that my site’s separate Cloudflare Worker could do everything just with `fetch()` to that server. But it felt too risky if others also relied on that service and then updating it would feel as fraught as running one of the popular Mastodon servers. So instead I’ve made a little NPM package that you deploy to Cloudflare
