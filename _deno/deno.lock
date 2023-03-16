@@ -14,7 +14,8 @@
   },
   "npm": {
     "specifiers": {
-      "@collected/press-server": "@collected/press-server@0.3.2"
+      "@collected/press-server": "@collected/press-server@0.3.2",
+      "@collected/press-server@^0.3.2": "@collected/press-server@0.3.2"
     },
     "packages": {
       "@collected/press-server@0.3.2": {
