@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "press": "npm:@collected/press-server"
-  }
-}
