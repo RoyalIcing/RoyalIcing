@@ -233,7 +233,9 @@ A good way to measure how this will affect the user is using Google’s online P
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-12x0lprxq.netlify.com%2F3colors%2F1000)
 
 ![Styled components: 1000 items, run A](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-a.png)
+
 ![Styled components: 1000 items, run B](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-b.png)
+
 ![Styled components: 1000 items, run C](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-c.png)
 
 #### CSS classes: 100 items
@@ -247,7 +249,9 @@ A good way to measure how this will affect the user is using Google’s online P
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-0x778jn69p.netlify.com%2F3colors%2F1000)
 
 ![CSS classes: 1000 items, run A](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-a.png)
+
 ![CSS classes: 1000 items, run B](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-b.png)
+
 ![CSS classes: 1000 items, run C](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-c.png)
 
 #### First Contentful Paint & Time to Interactive
