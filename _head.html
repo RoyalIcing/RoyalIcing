@@ -33,6 +33,7 @@ html {
   --main-bg: #12000D;
   --main-text-color: #d6deeb;
   --main-text-color: #E6EFFC;
+  --secondary-text-color: #718096;
 
   background: var(--main-bg);
 }
@@ -81,6 +82,11 @@ header[role=banner] ul {
   flex-wrap: wrap;
   padding: 1rem;
   font-weight: bold;
+}
+
+footer[role=contentinfo] {
+  font-size: 0.875rem;
+  color: var(--secondary-text-color);
 }
 
 /* body { font-family: "Sentinel SSm A", "Sentinel SSm B", sans-serif; } */
@@ -168,7 +174,7 @@ main nav li a {
 
 article time {
   font-size: .875rem;
-  color: #718096;
+  color: var(--secondary-text-color);
 }
 article img {
   display: block;
