@@ -6,7 +6,8 @@ date: 2019-03-30
 
 A team of Portuguese researchers have compared 27 programming languages by their energy use. They compared both CPU and DRAM energy usage with total time of execution and memory usage to build a fuller picture of efficiency.
 
-The aggregated figures for energy, time, and memory across 27 programming languages.
+![The aggregated figures for energy, time, and memory across 27 programming languages.](programming-language-energy-efficiency-compared/table-of-results.jpg)
+
 Unsurprisingly compiled languages such as C and C++ perform best or near the top. Their modern successor Rust also does well.
 
 Golang uses more CPU, but is still relatively lean. It’s especially impressive with memory usage, using even less than C or C++.
