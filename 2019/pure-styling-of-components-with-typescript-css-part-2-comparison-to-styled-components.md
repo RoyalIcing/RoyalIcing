@@ -214,41 +214,41 @@ A good way to measure how this will affect the user is using Google’s online P
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-oovyxzrk5q.netlify.com%2Fwhatever%2F100)
 
-![No styling: 100 items](no-styling-100-items.png)
+![No styling: 100 items](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/no-styling-100-items.png)
 
 #### No styling: 1000 items
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-oovyxzrk5q.netlify.com%2Fwhatever%2F1000)
 
-![No styling: 1000 items](no-styling-1000-items.png)
+![No styling: 1000 items](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/no-styling-1000-items.png)
 
 #### Styled components: 100 items
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-12x0lprxq.netlify.com%2F3colors%2F100)
 
-![Styled components: 100 items](styled-components-100-items.png)
+![Styled components: 100 items](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-100-items.png)
 
 #### Styled components: 1000 items
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-12x0lprxq.netlify.com%2F3colors%2F1000)
 
-![Styled components: 1000 items, run A](styled-components-1000-items-a.png)
-![Styled components: 1000 items, run B](styled-components-1000-items-b.png)
-![Styled components: 1000 items, run C](styled-components-1000-items-c.png)
+![Styled components: 1000 items, run A](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-a.png)
+![Styled components: 1000 items, run B](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-b.png)
+![Styled components: 1000 items, run C](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-1000-items-c.png)
 
 #### CSS classes: 100 items
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-0x778jn69p.netlify.com%2F3colors%2F100)
 
-![CSS classes: 100 items](css-classes-100-items.png)
+![CSS classes: 100 items](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-100-items.png)
 
 #### CSS classes: 1000 items
 
 [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsb-0x778jn69p.netlify.com%2F3colors%2F1000)
 
-![CSS classes: 1000 items, run A](css-classes-1000-items-a.png)
-![CSS classes: 1000 items, run B](css-classes-1000-items-b.png)
-![CSS classes: 1000 items, run C](css-classes-1000-items-c.png)
+![CSS classes: 1000 items, run A](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-a.png)
+![CSS classes: 1000 items, run B](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-b.png)
+![CSS classes: 1000 items, run C](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/css-classes-1000-items-c.png)
 
 #### First Contentful Paint & Time to Interactive
 
@@ -276,7 +276,7 @@ Using Firefox’s web developer tools, let’s see the size of the assets downlo
 
 Let’s compare the number of kilobytes downloaded. First, no styles:
 
-![No styles: assets downloaded](no-styles-assets-downloaded.png)
+![No styles: assets downloaded](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/no-styles-assets-downloaded.png)
 
 This is our baseline. 37KB + 1KB of gzipped JavaScript. Unzipped it’s 117KB. The first `1.xxx.js` file contains our dependencies such as React. The `main.xxx.js` is our app’s JavaScript such as custom components.
 
@@ -284,7 +284,7 @@ This is our baseline. 37KB + 1KB of gzipped JavaScript. Unzipped it’s 117KB. T
 
 Next, we have the subatomic CSS approach. We now have a `main.xxx.css` file that is less than one kilobyte in size.
 
-![Subatomic CSS: assets downloaded](subatomic-css-assets-downloaded.png)
+![Subatomic CSS: assets downloaded](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/subatomic-css-assets-downloaded.png)
 
 The `1.xxx.js` is essentially the same size. We added no extra dependencies. The `main.xxx.js` size has increase, but only by a 1/3 of a kilobyte.
 
@@ -294,7 +294,7 @@ We have gained styling, but with not much overhead at all.
 
 Lastly, let’s see the download sizes for styled-components.
 
-![Styled Components: assets downloaded](styled-components-assets-downloaded.png)
+![Styled Components: assets downloaded](pure-styling-of-components-with-typescript-css-part-2-comparison-to-styled-components/styled-components-assets-downloaded.png)
 
 While our `main.xxx.js` is also not much larger, our `1.xxx.js` dependencies is larger. A 15KB difference gzipped doesn’t sound like much, but uncompressed that’s 43KB. It’s over 1/3 larger than before. That’s extra code that has to be parsed and executed before our user sees anything. On a mobile device, this can be significant extra time and power.
 
