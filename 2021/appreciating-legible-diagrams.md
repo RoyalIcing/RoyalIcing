@@ -25,4 +25,4 @@ date: 2021-05-07
 >   
 > ✨ [https://t.co/9Fd8kkAoFD](https://t.co/9Fd8kkAoFD) [pic.twitter.com/yBfGspW5jp](https://t.co/yBfGspW5jp)
 > 
-> — ? Spooky Josh ?? (@jbrancha) [October 19, 2021](https://twitter.com/jbrancha/status/1450568777377198093)
+> — Josh Branchaud (@jbrancha) [October 19, 2021](https://twitter.com/jbrancha/status/1450568777377198093)
