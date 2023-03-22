@@ -18,7 +18,7 @@ And the HTML produced looks like:
 
 I particular like how `alt` support is there by default, encouraging writers to add an accessible description of the image screen reader users (or web crawlers) can read.
 
-However, HTML changes, and one of the additions that came with HTML5 is `<figure>`. This is an element borrowed from printed works, especially in non-fiction where they’ll for example say “see figure 1.4 for an illustration of a plant cell”.
+However, HTML evolves, and one of the additions that came with HTML5 is `<figure>`. This is an element borrowed from printed works, especially in non-fiction where they’ll for example say “see figure 1.4 for an illustration of a plant cell”.
 
 I first encountered `<figure>` in A Book Apart’s [_HTML5 for Web Designers_](https://abookapart.com/products/html5-for-web-designers) whose first edition came out in 2010, well over a decade ago. So it’s not exactly new.
 
