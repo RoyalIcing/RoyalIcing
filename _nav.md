@@ -1,4 +1,4 @@
-- [Home](/)
+- [Royal Icing](/)
 - [Blog](/blog)
 - [Projects](/projects)
 - [Mastodon](https://hachyderm.io/@royalicing)
