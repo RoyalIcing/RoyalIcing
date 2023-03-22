@@ -41,9 +41,9 @@ you’d write:
 
 ## An idea for a figure Markdown syntax
 
-So how would you model such a thing in Markdown? There are plugins such as [markdown-it-image-figures](https://github.com/Antonio-Laguna/markdown-it-image-figures) which let you use the existing `![]()` image syntax and allow them all to be rendered with wrapped `<figure>` elements instead. But this requires using a particular plugin, which may work with `markdown-it` but not another Markdown library.
+So how would you model such a thing in Markdown? There are plugins such as [markdown-it-image-figures](https://github.com/Antonio-Laguna/markdown-it-image-figures) which let you use the existing `![]()` image syntax and allow them all to be rendered with wrapped `<figure>` elements instead. But this requires using a particular plugin, which may work with `markdown-it` but not another Markdown library. And it changes all images to become wrapped in figures, I’d prefer to be explicit so existing images keep working as originally intended.
 
-I ideally want something future proof that will be supported no matter if I use a Markdown library written in JavaScript, Perl, or Rust. Is Markdown still open to additions?
+I ideally want something future proof that will be supported no matter if I use a Markdown library written in JavaScript, Perl, or Rust.
 
 Here’s my proposed syntax, extending the existing image syntax slightly.
 
@@ -105,7 +105,7 @@ The slight addition of a digit to the existing image syntax lets existing Markdo
 
 ## Unanswered questions:
 
-- How to support adding links? Is the image wrapped in a link, the text within the caption, or the entire `<a href="…"><figure>…</a>`?
+- How to support adding links? Is the image wrapped in a link, the text within the caption, or the entire `<a href="…"><figure>…</a>` is wrapped in a link?
 - How to support multiple articles on the same page that each have a `id="figure-1"`? How does Markdown currently handle this with footnote links?
 - Backwards compatibility. Currently writing `!42[text captioning the image](https://yourserver.net/link-to-image.png)` would produce the text `!42` followed by a hyperlink to the image.
-- Are only digits and hyphens supported? Could you support alphabetical characters, say to give a figure a memorable name?
+- Are only digits and hyphens supported? Could you support alphabetical characters, say to give a figure a memorable `id` for fragment hyperlinks?
