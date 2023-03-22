@@ -2,7 +2,7 @@
 
 ## Hoverlytics
 
-![Screenshot of Hoverlytics, which let you see audience analytics directly on your site](/assets/hoverlytics.jpg)
+![Screenshot of Hoverlytics, which let you see audience analytics directly on your site](/projects/hoverlytics.jpg)
 
 - Panel that overlaid website with audience analytics for the exact page your were visiting.
 - Installed as a Chrome extension.
@@ -13,7 +13,7 @@
 
 ## InfinityList
 
-![Home page of InfinityList](/assets/infinitylist2.jpg)
+![Home page of InfinityList](/projects/infinitylist2.jpg)
 
 - Video production house with clients such as Mercedes Benz, Casio, Luna Park, and Bounce.
 - Received 400K visits and 1.4M page views per month at its peak.
@@ -31,7 +31,7 @@
 
 ## Blik
 
-![Screenshot of Blik, a utility app I made for Mac](/assets/blik.png)
+![Screenshot of Blik, a utility app I made for Mac](/projects/blik.png)
 
 - Utility app for Mac for organising your projects and opening their files quickly.
 - Used animation and a clean design to make file organisation exciting.
@@ -42,7 +42,7 @@
 
 ## Wilsana
 
-![Website for Wilsana, two villas in Bali](/assets/wilsana.jpg)
+![Website for Wilsana, two villas in Bali](/projects/wilsana.jpg)
 
 - Website for two villas in Bali, through which bookings could be made.
 - Developed using PHP, HTML5, CSS3
