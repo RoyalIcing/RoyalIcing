@@ -50,7 +50,12 @@ html {
 /* body { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; } */
 /* body { font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif; } */
 
-body { font-family: var(--font-body); }
+body {
+  font-family: var(--font-body);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 a { color: inherit; text-decoration: inherit; }
 ul, ol { margin: 0; padding: 0; }
 nav li { font-family: var(--font-secondary); }
@@ -64,9 +69,6 @@ main, footer[role=contentinfo] {
   margin-right: auto;
   padding-left: 3%;
   padding-right: 3%;
-  padding-bottom: 4rem;
-  font-size: 112.5%;
-  line-height: 1.5;
 
   --list-style: disc;
   --list-padding-left: 1rem;
@@ -74,6 +76,12 @@ main, footer[role=contentinfo] {
   --link-border-bottom: 1px solid var(--pink-500);
   --link-hover-background: var(--pink-100);
   --link-hover-color: var(--main-bg);
+}
+main {
+  flex-grow: 1;
+  padding-bottom: 4rem;
+  font-size: 112.5%;
+  line-height: 1.5;
 }
 
 header[role=banner] {
