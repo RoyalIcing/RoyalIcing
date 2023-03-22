@@ -37,6 +37,7 @@ html {
 
   --font-display: "Quarto A", "Quarto B", serif;
   --font-secondary: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif;
+  --font-body: "Ideal Sans SSm A", "Ideal Sans SSm B", system-ui, sans-serif;
 
   background: var(--main-bg);
 }
@@ -49,9 +50,11 @@ html {
 /* body { font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; } */
 /* body { font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif; } */
 
-body { font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", system-ui, sans-serif; }
+body { font-family: var(--font-body); }
 a { color: inherit; text-decoration: inherit; }
 ul, ol { margin: 0; padding: 0; }
+nav li { font-family: var(--font-secondary); }
+section, article { letter-spacing: 0.01em; }
 
 main, footer[role=contentinfo] {
   background: var(--main-bg);
@@ -98,10 +101,6 @@ footer[role=contentinfo] {
   font-size: 0.875rem;
   color: var(--secondary-text-color);
 }
-
-/* body { font-family: "Sentinel SSm A", "Sentinel SSm B", sans-serif; } */
-nav li { font-family: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif; }
-section, article { letter-spacing: 0.01em; }
 
 main p, main pre {
   margin-top: 1.5em;
