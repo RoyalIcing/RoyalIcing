@@ -42,8 +42,6 @@ html {
   background: var(--main-bg);
 }
 
-.font-display { font-family: var(--font-display) !important; }
-.font-secondary { font-family: var(--font-secondary); }
 .tracking-tight { letter-spacing: -1px; }
 
 /* body { font-family: "Whitney SSm A", "Whitney SSm B", sans-serif; } */
@@ -106,9 +104,12 @@ header[role=banner] ul, footer[role=contentinfo] ul {
   font-weight: bold;
 }
 header[role=banner] a[href="/"] {
+  display: inline-block;
   font-family: var(--font-display);
-  font-size: 150%;
+  font-size: 170%;
   font-style: italic;
+  margin-top: -5px;
+  margin-right: 0.5rem;
 }
 
 main p, main pre {
