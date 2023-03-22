@@ -3,7 +3,11 @@ main = "index.js"
 compatibility_date = "2022-11-25"
 usage_model = "unbound"
 node_compat = true
-env = {}
+routes = [
+    { pattern = "icing.space", custom_domain = true },
+    { pattern = "www.icing.space", custom_domain = true }
+]
+# env = {}
 
 [triggers]
 crons = []
