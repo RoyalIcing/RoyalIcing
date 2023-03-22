@@ -81,6 +81,11 @@ header[role=banner] {
   /* background: var(--main-bg); */
   /* color: var(--main-text-color); */
 }
+footer[role=contentinfo] {
+  font-size: 0.875rem;
+  color: var(--secondary-text-color);
+}
+
 header[role=banner] ul, footer[role=contentinfo] ul {
   list-style: none;
   display: flex;
@@ -97,11 +102,6 @@ header[role=banner] a[href="/"] {
   font-style: italic;
 }
 
-footer[role=contentinfo] {
-  font-size: 0.875rem;
-  color: var(--secondary-text-color);
-}
-
 main p, main pre {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -110,6 +110,7 @@ main h1 {
   font-size: 2rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  text-wrap: pretty;
 }
 main h2 {
   font-size: 1.25rem;
