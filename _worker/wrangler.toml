@@ -5,7 +5,7 @@ usage_model = "unbound"
 node_compat = true
 routes = [
     { pattern = "icing.space", custom_domain = true },
-    { pattern = "www.icing.space", custom_domain = true }
+    # { pattern = "www.icing.space", custom_domain = true }
 ]
 # env = {}
 
