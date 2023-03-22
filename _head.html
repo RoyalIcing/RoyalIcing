@@ -35,12 +35,14 @@ html {
   --main-text-color: #E6EFFC;
   --secondary-text-color: #718096;
 
+  --font-display: "Quarto A", "Quarto B", serif;
+  --font-secondary: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif;
+
   background: var(--main-bg);
 }
 
-.font-display { font-family: "Quarto A", "Quarto B", serif !important; }
-.font-secondary { font-family: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif; }
-.font-800 { font-weight: 800; }
+.font-display { font-family: var(--font-display) !important; }
+.font-secondary { font-family: var(--font-secondary); }
 .tracking-tight { letter-spacing: -1px; }
 
 /* body { font-family: "Whitney SSm A", "Whitney SSm B", sans-serif; } */
@@ -77,13 +79,19 @@ header[role=banner] {
   /* color: var(--main-text-color); */
 }
 header[role=banner] ul {
-  display: flex;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   padding: 1rem;
   font-weight: bold;
+}
+header[role=banner] a[href="/"] {
+  font: var(--font-display);
+  font-size: 150%;
+  font-style: italic;
 }
 
 footer[role=contentinfo] {
