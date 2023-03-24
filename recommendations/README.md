@@ -1,15 +1,14 @@
 <article class="max-w-md pt-8 pb-4 px-4">
-<a class="block" href="https://www.hachette.com.au/claire-g-coleman/terra-nullius">
-<img width="300" height="464" src="https://icing.space/wp-content/uploads/2020/07/9780733641923-300x464.jpg" class="max-w-xs mx-auto shadow-xl wp-post-image" alt="" decoding="async" srcset="https://icing.space/wp-content/uploads/2020/07/9780733641923-300x464.jpg 300w, https://icing.space/wp-content/uploads/2020/07/9780733641923-194x300.jpg 194w, https://icing.space/wp-content/uploads/2020/07/9780733641923-1400x2165.jpg 1400w, https://icing.space/wp-content/uploads/2020/07/9780733641923-768x1188.jpg 768w, https://icing.space/wp-content/uploads/2020/07/9780733641923-993x1536.jpg 993w, https://icing.space/wp-content/uploads/2020/07/9780733641923-1324x2048.jpg 1324w, https://icing.space/wp-content/uploads/2020/07/9780733641923.jpg 1510w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-<h2 class="mx-auto min-h-16 px-3 text-xl max-w-2xl font-bold tracking-tight text-center">
-<a class="hover:underline" href="https://www.hachette.com.au/claire-g-coleman/terra-nullius">
-Terra Nullius</a>
-</h2>
-<h3 class="font-secondary text-center text-sm tracking-normal">
-By
-<a href="https://icing.space/recommendation-author/claire-g-coleman/" rel="tag">Claire G. Coleman</a>          </h3>
-<div class="break-words text-center">
-</div>
+    <a href="https://www.hachette.com.au/claire-g-coleman/terra-nullius">
+        <img width="300" height="464" src="/recommendations/terra-nullius-768x1188.jpg" alt="Cover of Terra Nullius" decoding="async">
+    </a>
+    <h2 class="mx-auto min-h-16 px-3 text-xl max-w-2xl font-bold tracking-tight text-center">
+        <a class="hover:underline" href="https://www.hachette.com.au/claire-g-coleman/terra-nullius">
+    Terra Nullius</a>
+    </h2>
+    <h3 class="font-secondary text-center text-sm tracking-normal">
+        By <a href="https://icing.space/recommendation-author/claire-g-coleman/">Claire G. Coleman</a>
+    </h3>
 </article>
 
 <article class="max-w-md pt-8 pb-4 px-4">
