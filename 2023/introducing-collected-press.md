@@ -10,7 +10,7 @@ WordPress became painful, and not just because there’s a new plugin update eve
 
 So of course I’ve done the dumb thing and written my own blog system. But there’s two things about it I think make it worthwhile. The first is all the content lives in a GitHub repo in a simple file/folder structure. The second is the content is fetched on-the-fly and served on the edge (using Cloudflare Workers).
 
-That’s right, on the fly. Every time you load this page, I’m asking GitHub for the current HEAD of my github.com/RoyalIcing/RoyalIcing repo and then using that SHA and requested URL path to lookup the matching content from jsdelivr.net. 
+That’s right, on the fly. Every time you load this page, I’m asking GitHub for the current HEAD of my github.com/RoyalIcing/RoyalIcing repo and then using that SHA and requested URL path to lookup the matching content from `raw.githubusercontent.com`. 
 
 There’s no build step or GitHub action. There’s nothing wrong with having these, except I often find that they too get out of date, break, and then need attention. I just wanted to write a new post, and I ended up spending an afternoon reading release notes, updating dependencies, and fixing bugs.
 
