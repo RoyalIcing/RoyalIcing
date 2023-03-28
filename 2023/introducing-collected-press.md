@@ -48,7 +48,7 @@ I want to be able to spin up new sites without having to worry about managing a 
 
 ## Proxying of CDNs
 
-I wanted to reduce the number of DNS lookups, so I proxy a request to load modern-normalize.css via a `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css` path, fetching it on the edge and then proxying its response back. I do the same for highlight.js’s syntax highlighting CSS.
+It’s a good idea to [reduce the number of DNS lookups](https://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:http-requests-and-dns-lookups), so instead of linking out to unpkg.com directly, I proxy `unpkg.com` requests via a subpath like `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css`, fetching it on the edge and then forwarding its response back. I do the same for highlight.js’s CSS.
 
 In the Worker this looks like:
 
@@ -68,7 +68,7 @@ export default {
 };
 ```
 
-I’m not sure whether to add this as part of the Collected Press package itself, as I want to keep that pretty focused. The cool thing about the library effectively just being a function that maps a `Request` into `Response` is that you can compose these functions.
+I’m not sure whether to add this as part of the Collected Press package itself, as I want to keep that pretty focused. The cool thing about the library effectively just being a function that maps a `Request` into `Response` is that you can compose multiple of these functions together.
 
 ## Dynamic footer
 
