@@ -32,7 +32,8 @@ export default {
     let strategy = "latest";
 
     if (url.pathname === "/blog") {
-      strategy = "stale-while-revalidate";
+      // strategy = "stale-while-revalidate";
+      strategy = "last-known-sha";
     } else {
       strategy = "last-known-sha";
     }
