@@ -72,7 +72,7 @@ I’m not sure whether to add this as part of the Collected Press package itself
 
 ## Dynamic footer
 
-One of these functions is one that uses Cloudflare’s `HTMLRewriter` to add link to the source repo’s SHA that was loaded.
+One of these functions uses Cloudflare’s [`HTMLRewriter`](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter/) to add link to the source repo’s SHA that was loaded.
 
 ```js
 function addSHAToResponse(res, sha) {
