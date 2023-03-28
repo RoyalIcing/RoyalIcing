@@ -1,4 +1,4 @@
-import { serveRequest, sourceFromGitHubRepo } from "@collected/press-server";
+import { sourceFromGitHubRepo } from "@collected/press-server";
 
 const allowedUnpkgPackages = ['modern-normalize', 'highlight.js'];
 
