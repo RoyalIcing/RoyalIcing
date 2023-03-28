@@ -33,6 +33,8 @@ export default {
 
     if (url.pathname === "/blog") {
       strategy = "stale-while-revalidate";
+    } else {
+      strategy = "last-known-sha";
     }
 
     if (url.pathname.startsWith("/old-sha/")) {
