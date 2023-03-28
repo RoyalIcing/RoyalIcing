@@ -2,7 +2,7 @@
 date: 2023-03-28
 ---
 
-# Introducing Collected Press
+# Introducing Collected Press: Markdown Directly Loaded from GitHub, Rendered on the Edge
 
 For a while, I’ve had a blog running on WordPress. I chose WordPress because I wanted something simple. I didn’t want to use a React framework or a static site generator, as from experience those things get out of date and then you have to migrate every year or so to the new version.
 
