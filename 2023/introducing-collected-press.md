@@ -102,6 +102,19 @@ When listing the most recent blog posts, this requires a lot of requests loading
 
 I’ve used Cloudflare’s KV store to cache rendered HTML content for a particular SHA and URL path. As Git commits are immutable, the content for a particular SHA is always the same. We can take advantage of this immutability to confidently cache forever. When the repo receives a new commit, we’ll see a new HEAD SHA which means we’ll load fresh content.
 
+I’m experimenting with a [stale-while-revalidate](https://web.dev/stale-while-revalidate/) strategy to caching, to try to make response times as quick as possible. Cloudflare’s `ctx.waitUntil()` is used to perform some work in the background, unblocking the response back to the user. The code for it looks like:
+
+```js
+let lastKnownSHA = await env.swr_cache.get(cacheKeys.headSHA);
+
+const headSHAPromise = source.fetchHeadSHA();
+ctx.waitUntil(headSHAPromise.then(headSHA => env.swr_cache.put(cacheKeys.headSHA, headSHA)));
+
+if (lastKnownSHA == null) {
+    lastKnownSHA = await headSHAPromise;
+}
+```
+
 ## Other things
 
 - If I wasn’t to come up with Collected Press, I would likely have chosen Astro. I love the HTML-first and server-first approach, and I love the range of integrations. Perhaps there’s a way to make Collected Press work within Astro?
