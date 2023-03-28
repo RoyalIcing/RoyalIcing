@@ -29,12 +29,14 @@ These code snippets are syntax highlighted on the server, and then I load a smal
 ```
 
 ```jsx
-<Button id="hello">Some example React</Button>
+export function Example() {
+    return <Button id="hello">Some example React</Button>;
+}
 ```
 
 ```css
 :root {
-    color: red;
+    font-size: calc(100% + 8vw);
 }
 ```
 
