@@ -62,23 +62,33 @@ export default {
 
     const cacheKey = cacheKeys.pathAndSHA(url.pathname, sha);
     let cachedContent = await env.swr_cache.get(cacheKey, { type: "stream" });
-    if (strategy === "stale-while-revalidate" && cachedContent == null) {
-      cachedContent = await env.swr_cache.get(cacheKeys.pathLatest(url.pathname), { type: "stream" });
-    }
-    if (cachedContent != null) {
-      const mimeType = source.expectedMimeTypeForPath(url.pathname);
-      return addSHAToResponse(new Response(cachedContent, { headers: { "content-type": mimeType, "content-security-policy": contentSecurityPolicy } }), sha);
+    let res = null;
+
+    if (cachedContent == null) {
+      if (strategy === "stale-while-revalidate") {
+        cachedContent = await env.swr_cache.get(cacheKeys.pathLatest(url.pathname), { type: "stream" });
+      }
+
+      const resPromise = source.serveURL(url, { commitSHA: sha });
+      ctx.waitUntil(resPromise
+        .then(res => res.clone().arrayBuffer())
+        .then(content => {
+          env.swr_cache.put(cacheKey, content);
+          if (strategy === "stale-while-revalidate") {
+            env.swr_cache.put(cacheKeys.pathLatest(url.pathname), content);
+          }
+        })
+      );
+
+      if (cachedContent == null) {
+        res = await resPromise;
+      }
     }
 
-    const res = await source.serveURL(url, { commitSHA: sha });
-    ctx.waitUntil(res.clone().arrayBuffer()
-      .then(content => {
-        env.swr_cache.put(cacheKey, content);
-        if (strategy === "stale-while-revalidate") {
-          env.swr_cache.put(cacheKeys.pathLatest(url.pathname), content);
-        }
-      })
-    );
+    if (cachedContent != null) {
+      const mimeType = source.expectedMimeTypeForPath(url.pathname);
+      res = new Response(cachedContent, { headers: { "content-type": mimeType, "content-security-policy": contentSecurityPolicy } });
+    }
 
     return addSHAToResponse(res, sha);
   }
