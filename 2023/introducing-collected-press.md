@@ -12,6 +12,8 @@ So of course I’ve done the dumb thing and written my own blog system. But ther
 
 That’s right, on the fly. Every time you load this page, I’m asking GitHub for the current HEAD of my github.com/RoyalIcing/RoyalIcing repo and then using that SHA and requested URL path to lookup the matching content from `raw.githubusercontent.com`. 
 
+# Buildless
+
 There’s no build step or GitHub action. There’s nothing wrong with having these, except I often find that they too get out of date, break, and then need attention. I just wanted to write a new post, and I ended up spending an afternoon reading release notes, updating dependencies, and fixing bugs.
 
 Instead I want to be able to create a new file, write some Markdown in it, and have it appear as a new blog post or web page without fuss. I especially want to be able to do this from my phone, so if I see a typo and want to fix it, or if I come up with a new post idea while away from my laptop, I want to be able to do it with the device I always have at hand.
