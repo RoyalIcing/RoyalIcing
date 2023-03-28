@@ -18,7 +18,27 @@ Instead I want to be able to create a new file, write some Markdown in it, and h
 
 This means I don’t want to debug from my phone. I don’t want to be scrolling through some build pipeline’s output, and study what version of Node.js it’s using, and see what commands it ran and then which one hit a snag. I want to write some Markdown and then it appear online without a hiccup. GitHub can do [something like this](https://pages.github.com) but I don’t want to worry about Ruby or Node.js. Ideally GitHub and other services copy the idea of Collected Press and serve content on-the-fly from repositories.
 
+## Syntax highlighting
+
 I also want syntax highlighting performed on the server. The React community is coming around to doing things on the server (such as server components), but in my opinion it took far too long to get here and the community has historically just outsourced everything to the user’s browser leading to long loading times and thirsty battery use. Collected Press does all the Markdown-to-HTML conversion and syntax highlighting on the server, and then runs zero client-side JavaScript. This ensures a fast experience no matter what device readers are using.
+
+These code snippets are syntax highlighted on the server, and then I load a small `night-owl.css` from `unpkg.com` to add the styling. I don’t have to detect which languages are used and only load their libraries, I can have them all available on the server.
+
+```html
+<button id="hello">Some example HTML</button>
+```
+
+```jsx
+<Button id="hello">Some example React</Button>
+```
+
+```css
+:root {
+    color: red;
+}
+```
+
+## Deploy speed
 
 I haven’t seen anything else with the deploy speed, where I `git push` my Markdown file and then switch to my production site and reload and the new page is instantly there. That’s the power of having no build step. There’s a confidence gained in that short period of unease where you wonder if something got tripped up in the build just disappearing. It should feel the same as posting to social media, which just works.
 
