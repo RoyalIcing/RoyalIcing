@@ -10,7 +10,7 @@
 
 ----
 
-## Recent Posts
+## Recent Blog Posts
 
 - [Introducing Collected Press](/2023/introducing-collected-press)
 - [Write Once, Integrate Everywhere](/2023/write-once-integrate-everywhere)
