@@ -22,7 +22,7 @@ This means I don’t want to debug from my phone. I don’t want to be scrolling
 
 I also want syntax highlighting performed on the server. The React community is coming around to doing things on the server (such as server components), but in my opinion it took far too long to get here and the community has historically just outsourced everything to the user’s browser leading to long loading times and thirsty battery use. Collected Press does all the Markdown-to-HTML conversion and syntax highlighting on the server, and then runs zero client-side JavaScript. This ensures a fast experience no matter what device readers are using.
 
-These code snippets are syntax highlighted on the server, and then I load a small `night-owl.css` from `unpkg.com` to add the styling. I don’t have to detect which languages are used and only load their libraries, I can have them all available on the server.
+These code snippets are syntax highlighted on the server using [highlight.js](https://highlightjs.org), with a small `night-owl.css` loaded by the browser from `unpkg.com` to add styling. I don’t have to detect which languages are used and only load their syntaxes, I can have them all available on the server.
 
 ```html
 <button id="hello">Some example HTML</button>
