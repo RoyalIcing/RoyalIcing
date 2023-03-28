@@ -46,12 +46,66 @@ I haven’t seen anything else with the deploy speed, where I `git push` my Mark
 
 I want to be able to spin up new sites without having to worry about managing a theme or database or keeping some popular JavaScript tool up-to-date. Collected Press does this for me, and perhaps it might for you too.
 
+## Proxying of CDNs
+
+I wanted to reduce the number of DNS lookups, so I proxy a request to load modern-normalize.css via a `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css` path, fetching it on the edge and then proxying its response back. I do the same for highlight.js’s syntax highlighting CSS.
+
+In the Worker this looks like:
+
+```js
+const allowedUnpkgPackages = ['modern-normalize', 'highlight.js'];
+
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+
+    if (allowedUnpkgPackages.some(name => url.pathname.startsWith(`/unpkg.com/${name}@`))) {
+      return fetch(`https:/${url.pathname}`, { cf: { cacheEverything: true } });
+    }
+
+    …
+  }
+};
+```
+
+I’m not sure whether to add this as part of the Collected Press package itself, as I want to keep that pretty focused. The cool thing about the library effectively just being a function that maps a `Request` into `Response` is that you can compose these functions.
+
+## Dynamic footer
+
+One of these functions is one that uses Cloudflare’s `HTMLRewriter` to add link to the source repo’s SHA that was loaded.
+
+```js
+function addSHAToResponse(res, sha) {
+  return new HTMLRewriter()
+    .on('footer[role="contentinfo"] p', {
+      element: (element) => {
+        element.after(`<p><a href="https://github.com/RoyalIcing/RoyalIcing/tree/${sha}"><small>SHA: ${sha}</small></a></p>`, { html: true },)
+      },
+    })
+    .transform(res);
+}
+
+export default {
+  async fetch(request, env, ctx) {
+    const source = sourceFromGitHubRepo('RoyalIcing', 'RoyalIcing');
+    const sha = await source.fetchHeadSHA();
+    const res = await source.serveURL(url, { commitSHA: sha });
+
+    return addSHAToResponse(res, sha);
+  }
+}
+```
+
+## Caching
+
+When listing the most recent blog posts, this requires a lot of requests loading the Markdown for every single article to extract its title and publication date (which is used to sort the posts). This makes loading these index pages a little slow.
+
+I’ve used Cloudflare’s KV store to cache rendered HTML content for a particular SHA and URL path. As Git commits are immutable, the content for a particular SHA is always the same. We can take advantage of this immutability to confidently cache forever. When the repo receives a new commit, we’ll see a new HEAD SHA which means we’ll load fresh content.
+
 ## Other things
 
-- I wanted to reduce the number of DNS lookups, so I proxy a request to load modern-normalize.css via a `/unpkg.com/modern-normalize@1.1.0/modern-normalize.css` path, fetching it on the edge and then proxying its response back. I do the same for highlight.js’s syntax highlighting CSS.
 - If I wasn’t to come up with Collected Press, I would likely have chosen Astro. I love the HTML-first and server-first approach, and I love the range of integrations. Perhaps there’s a way to make Collected Press work within Astro?
 - The styles for my site are in single `<style>` tag in the `<head>`. However, you can add `.css` files or images and have those be served up.
 - I initially had a single server that could load from any GitHub repository, which mean that my site’s separate Cloudflare Worker could do everything just with `fetch()` to that server. But it felt too risky if others also relied on that service and then updating it would feel as fraught as running one of the popular Mastodon servers. So instead I’ve made a little NPM package that you deploy to Cloudflare
 - I’ve tried deploying it to Deno Deploy too, but I seem to be having trouble with ES modules. This is the sort of crap I‘m trying to get away from — it’s not Deno’s fault but it’s an issue stemming from the switch from `require()` to `import/export` and JavaScript’s now having two modes that must be managed correctly. Ideally I’d rewrite the `@collected/press-server` package to have no dependencies but that’s a lot more work, so instead I’ve stuffed all that pain into this single package-sized box which hopefully only need occassional updates.
 - Even though the Markdown content and the Cloudflare Worker code live in the same Git repo, there’s actually two concepts of a deploy. The first is for deploying the Worker, which simply imports the package and runs a function telling it which GitHub repo to load content from. The second is when pushing content to GitHub, which updates the `HEAD` of my main branch, which means the Worker will load content for that new Git SHA. So because these’s two things are completely separate, there’s no requirement that they live in the same repo.
-- When listing the most recent blog posts, this requires a lot of requests loading the Markdown for every article to get its title and publication date. This makes loading these index pages a little slow. There’s opportunities for caching here, where I use the Git SHA to cache things safely forever — for a given SHA, the content is always the same. It’s the power of immutability.
