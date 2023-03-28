@@ -31,6 +31,10 @@ export default {
 
     let strategy = "latest";
 
+    if (url.pathname === "/blog") {
+      strategy = "stale-while-revalidate";
+    }
+
     if (url.pathname.startsWith("/old-sha/")) {
       strategy = "last-known-sha";
       url.pathname = url.pathname.replace(/^\/old-sha/, "");
