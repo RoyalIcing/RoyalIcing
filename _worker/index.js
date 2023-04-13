@@ -29,6 +29,17 @@ export default {
       return fetch(`https:/${url.pathname}`, { cf: { cacheEverything: true } });
     }
 
+    // TODO: add this to collected press.
+    if (url.pathname !== '/' && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.slice(0, -1);
+      return new Response(null, {
+        status: 301,
+        headers: {
+          location: url.toString()
+        }
+      });
+    }
+
     let strategy = "latest";
 
     if (url.pathname === "/blog") {
