@@ -41,6 +41,6 @@ Cloudflare Workers showed that a more limited run time environment in terms of p
 
 Calculated.World takes those ideas and technologies and remixes them into a much simpler model — but one which unlocks capabilities I haven’t seen anywhere else.
 
-The best way I can describe it is it’s like Lambda running WebAssembly on Edge server all over the world. For now there’s no persisted state, and I intend to explore that more in the future.
+The best way I can describe it is it’s like Lambda running WebAssembly on Edge servers all over the world. For now it’s stateless (there’s nothing persisted in the cloud), though I intend to explore that more in the future.
 
 Pure functions downloaded quickly to anywhere able to run in any environment. Server. Edge. Browser. Native. I think that’s pretty powerful.
