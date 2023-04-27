@@ -37,7 +37,7 @@ Vercel proved you can using content addressing to break up an application into f
 
 Cloudflare Workers showed that a more limited run time environment in terms of programming capabilities, mixed with some unique strengths such as “why manage regions when you can just deploy everywhere in the world?” and interesting new cloud primitives such as KV and Durable Objects.
 
-~[The broad strokes architecture of Calculated.World](calculated-world/architecture.png)
+![The broad strokes architecture of Calculated.World](calculated-world/architecture.png)
 
 Calculated.World takes those ideas and technologies and remixes them into a much simpler model — but one which unlocks capabilities I haven’t seen anywhere else.
 
