@@ -10,11 +10,23 @@ const cacheKeys = Object.freeze({
   pathLatest: (path) => `latest: ${path}`,
 });
 
-function addSHAToResponse(res, sha) {
+function addSHAToResponse(res, url, sha) {
+  // TODO: add link[rel=canonical]
   return new HTMLRewriter()
+    .on('head title', {
+      element: (element) => {
+        const ogType = url.pathname === "/" ? "website" : "article";
+        const ogImage = `http://cdn.lilapi.com/1/github/RoyalIcing?width=1200&amp;height=628&amp;t1=Royal+Icing%3A+A+delicious+tour+of+software+design&amp;t1-color=%23ed64a6&amp;t2-color=%23ed64a6&amp;website=icing.space&amp;author-name=Patrick+Smith`;
+        element.after(`<meta property="og:type" content="${ogType}">`, { html: true });
+        element.after(`<meta property="og:image" content="${ogImage}">`, { html: true });
+        element.after(`<meta name="twitter:site" content="@royalicing">`, { html: true });
+        element.after(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
+        element.after(`<meta name="twitter:image" content="${ogImage}">`, { html: true });
+      },
+    })
     .on('footer[role="contentinfo"] p', {
       element: (element) => {
-        element.after(`<p><a href="https://github.com/RoyalIcing/RoyalIcing/tree/${sha}"><small>SHA: ${sha}</small></a></p>`, { html: true },)
+        element.after(`<p><a href="https://github.com/RoyalIcing/RoyalIcing/tree/${sha}"><small>SHA: ${sha}</small></a></p>`, { html: true })
       },
     })
     .transform(res);
@@ -102,6 +114,6 @@ export default {
       res = new Response(cachedContent, { headers: { "content-type": mimeType, "content-security-policy": contentSecurityPolicy } });
     }
 
-    return addSHAToResponse(res, sha);
+    return addSHAToResponse(res, url, sha);
   }
 }
