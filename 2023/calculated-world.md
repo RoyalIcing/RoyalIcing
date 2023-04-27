@@ -2,7 +2,7 @@
 date: 2023-04-27
 ---
 
-# Calculated World
+# Introducing Calculated World
 
 [Calculated.World](https://calculated.world) is now live! Over the past few months I’ve been experimenting a lot with WebAssembly, trying to understand its limitation and its strengths. Both are pretty clear:
 
