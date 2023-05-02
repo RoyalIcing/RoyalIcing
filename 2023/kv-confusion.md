@@ -4,7 +4,7 @@ date: 2023-05-01
 
 # KV Confusion
 
-Today [Vercel announced](https://vercel.com/blog/vercel-storage) a range of storage options, from Postgres to an S3-like object store. One of those is a hosted Redis offering called Vercel KV.
+Today [Vercel announced](https://vercel.com/blog/vercel-storage) a range of storage options, from Postgres to an S3-like object store. One of those is a hosted Redis offering called [Vercel KV](https://vercel.com/docs/storage/vercel-kv#how-vercel-kv-works).
 
 This would be fine if there weren't two other offerings from competitors also called KV.
 
