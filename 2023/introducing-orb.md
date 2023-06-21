@@ -2,19 +2,9 @@
 date: 2023-06-21
 ---
 
-# Introducing Orb for Elixir: Composable WebAssembly modules that run anywhere
-# Introducing Orb for Elixir: Write WebAssembly modules that run anywhere
-# Introducing Orb for Elixir: Easily Write WebAssembly
-# Introducing Orb for Elixir: making WebAssembly as easy as Ruby
-# Introducing Orb: An Elixir Assembler for WebAssembly
-# Introducing Orb: Write WebAssembly with Elixir
+# Introducing Orb for Elixir: WebAssembly as easy as Ruby
 # Introducing Orb: WebAssembly meets Elixir
-# Introducing Orb: an Elixir DSL for Writing WebAssembly that runs anywhere
-# Exploring WebAssembly with Orb: A DSL for Writing WebAssembly Modules
-# Exploring WebAssembly with Orb: Using Macros and Libraries to Get the Most Out of WebAssembly
-# Enhancing WebAssembly with Elixir and Orb
-# Introducing Orb: An Elixir Compiler for WebAssembly
-# Get Started with WebAssembly Programming with Orb
+# Introducing Orb: an Elixir DSL for Writing WebAssembly
 
 HTML works on pretty much any computing device you buy today. JavaScript runs in the browser, on the server, at the edge, and on your mobile and laptop. I believe WebAssembly will follow their footsteps and become the new lingua franca.
 
