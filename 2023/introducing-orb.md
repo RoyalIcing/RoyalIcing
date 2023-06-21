@@ -78,7 +78,7 @@ You write the easier-to-read, looks-like-Ruby:
 @magic_number = 42
 ```
 
-Or instead of:
+Or instead of having to juggle and remember memory offsets to string constants:
 
 ```elixir
 data(1024, "<!doctype html>\\00")
@@ -101,3 +101,5 @@ There’s more macros that I’m experimenting with, and not all of them will ma
 ## Use it today
 
 You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing/status/1651430346821623809) or [Mastodon]() if you have any questions or thoughts!
+
+I’m also working on other pieces of the puzzle to make the WebAssembly ecosystem stronger, such as Wasm HTML Custom Elements, and patterns for deploying these modules to the cloud.
