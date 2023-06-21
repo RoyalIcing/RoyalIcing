@@ -4,19 +4,19 @@ date: 2023-06-21
 
 # Introducing Orb: Write WebAssembly using Elixir
 
-HTML works on pretty much any computing device you buy today. JavaScript runs in the browser, on the server, at the edge, and on your mobile and laptop. I believe WebAssembly will follow their footsteps and become a new lingua franca.
+HTML works on pretty much any computing device you buy today. JavaScript runs in the browser, on the server, at the edge, and on your mobile and laptop. I believe WebAssembly will follow their footsteps and become the new lingua franca.
 
-For the past few months I’ve been writing an Elixir library for authoring WebAssembly modules. You can think of it as DSL for WebAssembly’s syntax, with a few productivity enhancements added.
+For the past few months I’ve been writing an Elixir library for authoring WebAssembly modules called **Orb**. You can think of it as DSL for WebAssembly’s syntax, with a few productivity enhancements added.
 
-WebAssembly is low level. You work with integers and floats, can perform operations on them like adding or multiplication, and then can read and write those values to a block of memory. There’s no concept of a “string” or an “array”, let alone a “hash map” or “HTTP request”.
+WebAssembly is low level. You work with integers and floats, can perform operations on them like adding or multiplication, and then read and write those values to a block of memory. There’s no concept of a “string” or an “array”, let alone a “hash map” or “HTTP request”.
 
-That’s where a library like Orb can help out. It takes full advantage of Elixir’s power as a language by turning it into a compiler for WebAssembly. You can define WebAssembly modules in Elixir for “string” or “hash map”, and compose them together into a final module.
+That’s where a library like Orb can help out. It takes full advantage of Elixir’s language features by turning it into a compiler for WebAssembly. You can define WebAssembly modules in Elixir for “string” or “hash map”, and compose them together into a final module.
 
 My aim is to take existing standards — like UTF-8, JSON, HTML, MIME, URL-encoding, multipart form data, HTTP 1 requests — and make those the interchange format between a WebAssembly module and your app’s code. We don’t need to reinvent the wheel, instead we can have some [lightweight conventions](https://calculated.world/conventions) that make use of webby formats that already exist.
 
 ## An example
 
-Here is a module that converts a integer like `255` to `000000ff`. It accepts 
+Here is a module that converts a integer like `255` to `000000ff`. It accepts the integer value to format, and a “pointer” to write out to.
 
 ```elixir
 defmodule HexConversion do
