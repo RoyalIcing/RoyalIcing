@@ -28,7 +28,7 @@ defmodule HexConversion do
     func u32_to_hex_lower(
       value: I32,
       write_ptr: I32.I8.Pointer
-    ), nil, i: I32, digit: I32 do
+    ), i: I32, digit: I32 do
       i = 8
 
       loop Digits do
