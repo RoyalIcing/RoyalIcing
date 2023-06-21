@@ -27,7 +27,7 @@ defmodule HexConversion do
   wasm do
     func u32_to_hex_lower(
       value: I32,
-      write_to_address: I32.Pointer
+      write_ptr: I32.Pointer
     ), nil, i: I32, digit: I32 do
       i = 8
 
@@ -39,9 +39,9 @@ defmodule HexConversion do
           value = value / 16
 
           if digit > 9 do
-            memory32_8![write_to_address + i] = ?a + digit - 10
+            memory32_8![write_ptr + i] = ?a + digit - 10
           else
-            memory32_8![write_to_address + i] = ?0 + digit
+            memory32_8![write_ptr + i] = ?0 + digit
           end
 
           Digits.continue(if: i > 0)
