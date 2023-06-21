@@ -29,18 +29,20 @@ defmodule HexConversion do
       i = 8
 
       loop Digits do
-        i = I32.sub(i, 1)
+        I32.u! do
+          i = i - 1
 
-        digit = I32.rem_u(value, 16)
-        value = I32.div_u(value, 16)
+          digit = rem(value, 16)
+          value = value / 16
 
-        if I32.gt_u(digit, 9) do
-          memory32_8![I32.add(write_to_address, i)] = I32.add(?a, I32.sub(digit, 10))
-        else
-          memory32_8![I32.add(write_to_address, i)] = I32.add(?0, digit)
+          if digit > 9 do
+            memory32_8![write_to_address + i] = ?a + digit - 10
+          else
+            memory32_8![write_to_address + i] = ?0 + digit
+          end
+
+          Digits.continue(if: i > 0)
         end
-
-        Digits.continue(if: I32.gt_u(i, 0))
       end
     end
   end
