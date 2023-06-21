@@ -57,7 +57,7 @@ const { instance } = await WebAssembly.instantiateStreaming(fetch("example.wasm"
 
 (The same works in Deno, which is what I host [Calculated.World](https://calculated.world/) using.)
 
-For a framework like Next.js you can [import then instantiate the wasm module](https://nextjs.org/docs/messages/middleware-dynamic-wasm-compilation).
+In Next.js you can [import then instantiate the wasm module](https://nextjs.org/docs/messages/middleware-dynamic-wasm-compilation).
 
 For other languages Wasmtime is well-supported library for [many languages](https://docs.wasmtime.dev/lang.html).
 
