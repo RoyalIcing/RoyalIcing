@@ -2,7 +2,7 @@
 date: 2023-06-21
 ---
 
-# Introducing 🕷️🕸️ Orb: a friendly Elixir DSL for writing WebAssembly
+# Introducing Orb: a friendly Elixir DSL for writing WebAssembly 🕷️🕸️
 
 HTML works on pretty much any computing device you buy today. JavaScript runs in the browser, on the server, at the edge, and on your mobile and laptop. I believe WebAssembly (also spun from the web) will follow their footsteps and become the new lingua franca.
 
