@@ -187,6 +187,6 @@ There’s more macros & helpers that I’m experimenting with, and not all of th
 
 ## Use it today
 
-You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing/status/1651430346821623809) or [Mastodon]() if you have any questions or thoughts!
+Orb is currently in alpha as I gather feedback working towards a beta and version 1. You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing/status/1651430346821623809) or [Mastodon]() if you have any questions or thoughts!
 
 I’m also working on other pieces of the puzzle to make the WebAssembly ecosystem stronger, such as Wasm HTML Custom Elements, and patterns for deploying these modules to the cloud.
