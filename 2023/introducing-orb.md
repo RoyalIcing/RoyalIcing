@@ -2,7 +2,19 @@
 date: 2023-06-21
 ---
 
-# Introducing Orb: Write WebAssembly using Elixir
+# Introducing Orb for Elixir: Composable WebAssembly modules that run anywhere
+# Introducing Orb for Elixir: Write WebAssembly modules that run anywhere
+# Introducing Orb for Elixir: Easily Write WebAssembly
+# Introducing Orb for Elixir: making WebAssembly as easy as Ruby
+# Introducing Orb: An Elixir Assembler for WebAssembly
+# Introducing Orb: Write WebAssembly with Elixir
+# Introducing Orb: WebAssembly meets Elixir
+# Introducing Orb: an Elixir DSL for Writing WebAssembly that runs anywhere
+# Exploring WebAssembly with Orb: A DSL for Writing WebAssembly Modules
+# Exploring WebAssembly with Orb: Using Macros and Libraries to Get the Most Out of WebAssembly
+# Enhancing WebAssembly with Elixir and Orb
+# Introducing Orb: An Elixir Compiler for WebAssembly
+# Get Started with WebAssembly Programming with Orb
 
 HTML works on pretty much any computing device you buy today. JavaScript runs in the browser, on the server, at the edge, and on your mobile and laptop. I believe WebAssembly will follow their footsteps and become the new lingua franca.
 
@@ -27,7 +39,7 @@ defmodule HexConversion do
   wasm do
     func u32_to_hex_lower(
       value: I32,
-      write_ptr: I32.Pointer
+      write_ptr: I32.I8.Pointer
     ), nil, i: I32, digit: I32 do
       i = 8
 
@@ -39,9 +51,9 @@ defmodule HexConversion do
           value = value / 16
 
           if digit > 9 do
-            memory32_8![write_ptr + i] = ?a + digit - 10
+            write_ptr[byte_at!: i] = ?a + digit - 10
           else
-            memory32_8![write_ptr + i] = ?0 + digit
+            write_ptr[byte_at!: i] = ?0 + digit
           end
 
           Digits.continue(if: i > 0)
@@ -65,6 +77,49 @@ const { instance } = await WebAssembly.instantiateStreaming(fetch("example.wasm"
 In Next.js you can [import then instantiate the wasm module](https://nextjs.org/docs/messages/middleware-dynamic-wasm-compilation).
 
 For other languages Wasmtime is well-supported library for [many languages](https://docs.wasmtime.dev/lang.html).
+
+## Composable puzzle pieces
+
+Writing software is a lot easier if you break a large problem into smaller bite-sized problems. Orb lets you compose modules together.
+
+```elixir
+defmodule HTMLComponent do
+  use Orb
+
+  wasm_memory pages: 1
+
+  wasm do
+    # Import the u32_to_hex_lower function from the HexConversion module.
+    HexConversion.funcp(:u32_to_hex_lower)
+
+    func u32_to_hex_lower(
+      value: I32,
+      write_ptr: I32.I8.Pointer
+    ), nil, i: I32, digit: I32 do
+      i = 8
+
+      loop Digits do
+        I32.u! do
+          i = i - 1
+
+          digit = rem(value, 16)
+          value = value / 16
+
+          if digit > 9 do
+            write_ptr[byte_at!: i] = ?a + digit - 10
+          else
+            write_ptr[byte_at!: i] = ?0 + digit
+          end
+
+          Digits.continue(if: i > 0)
+        end
+      end
+    end
+  end
+end
+```
+
+These modules don’t have to be just ones you have written. Elixir comes with a great package manager called [Hex](https://hex.pm), and so anyone can publish a package there with a collection of Orb WebAssembly modules ready to compose.
 
 ## Macros
 
