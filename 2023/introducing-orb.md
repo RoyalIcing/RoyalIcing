@@ -24,7 +24,7 @@ defmodule HexConversion do
 
   wasm_memory pages: 1
 
-  wasm do
+  wasm U32 do
     func u32_to_hex_lower(
       value: I32,
       write_ptr: I32.I8.Pointer
@@ -32,20 +32,18 @@ defmodule HexConversion do
       i = 8
 
       loop Digits do
-        I32.u! do
-          i = i - 1
+        i = i - 1
 
-          digit = rem(value, 16)
-          value = value / 16
+        digit = rem(value, 16)
+        value = value / 16
 
-          if digit > 9 do
-            write_ptr[byte_at!: i] = ?a + digit - 10
-          else
-            write_ptr[byte_at!: i] = ?0 + digit
-          end
-
-          Digits.continue(if: i > 0)
+        if digit > 9 do
+          write_ptr[byte_at!: i] = ?a + digit - 10
+        else
+          write_ptr[byte_at!: i] = ?0 + digit
         end
+
+        Digits.continue(if: i > 0)
       end
     end
   end
@@ -162,7 +160,7 @@ I32.add(I32.sub(digit, 10), ?a)
 You write the more natural:
 
 ```elixir
-I32.u!(digit - 10 + ?a)
+digit - 10 + ?a
 ```
 
 Or instead of having to juggle and remember memory offsets to string constants:
