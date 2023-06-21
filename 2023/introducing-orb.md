@@ -96,7 +96,7 @@ func content_type, I32 do
 end
 ```
 
-There’s more macros that I’m experimenting with, and not all of them will make it in. I want to add conveniences for common problems, while avoiding having too much magic.
+There’s more macros & helpers that I’m experimenting with, and not all of them will make it in. I want to add conveniences for common problems while avoiding having too much magic.
 
 ## Use it today
 
