@@ -25,7 +25,10 @@ defmodule HexConversion do
   wasm_memory pages: 1
 
   wasm do
-    func u32_to_hex_lower(value: I32, write_to_address: I32.Pointer), nil, i: I32, digit: I32 do
+    func u32_to_hex_lower(
+      value: I32,
+      write_to_address: I32.Pointer
+    ), nil, i: I32, digit: I32 do
       i = 8
 
       loop Digits do
