@@ -78,6 +78,18 @@ You write the easier-to-read, looks-like-Ruby:
 @magic_number = 42
 ```
 
+Or instead of using the explicit math functions:
+
+```elixir
+I32.add(I32.sub(digit, 10), ?a)
+```
+
+You write the more natural:
+
+```elixir
+I32.u!(digit - 10 + ?a)
+```
+
 Or instead of having to juggle and remember memory offsets to string constants:
 
 ```elixir
