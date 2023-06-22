@@ -141,8 +141,7 @@ There are two stages to an Elixir module — compile time and run time. Orb use
 Instead of writing:
 
 ```elixir
-i32(42)
-global_set(:magic_number)
+global_set(:magic_number, i32(42))
 ```
 
 You write the easier-to-read, looks-like-Ruby:
