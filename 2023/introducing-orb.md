@@ -107,8 +107,8 @@ Writing software is a lot easier if you break a large problem into smaller bite-
 ```elixir
 defmodule HTMLComponent do
   use Orb
-  # Import module with memory, bump allocator, and string joining.
-  import Buffer
+  # Imports WebAssembly module with memory, bump allocator, and string joining.
+  use Buffer
 
   I32.global value: 255
 
@@ -165,22 +165,22 @@ digit - 10 + ?a
 Or instead of having to juggle and remember memory offsets to string constants:
 
 ```elixir
-data(1024, "<!doctype html>\\00")
+data(1234, "<!doctype html>\\00")
 
 func content_type, I32 do
-  1024
+  1234
 end
 ```
 
 You write:
 
 ```elixir
-func content_type, I32 do
+func content_type, I32.String do
   ~S"<!doctype html>"
 end
 ```
 
-There’s more macros & helpers that I’m experimenting with, and not all of them will make it in. I want to add conveniences for common problems while avoiding having too much magic.
+There’s more macros & helpers that I’m experimenting with, and not all of them will make it in. I want conveniences for common problems while avoiding too much magic.
 
 ## Use it today
 
