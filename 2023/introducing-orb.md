@@ -50,7 +50,7 @@ defmodule HexConversion do
 end
 ```
 
-We get a friendly syntax for math like `+` and `-`, conveniences to write bytes to memory, and `if` and `loop` statements. Plus it feels like a language like Elixir or Ruby.
+We get a friendly syntax for math like `+` and `-`, conveniences to write bytes to memory, and `if` and `loop` statements. It feels like a lower-level Elixir or Ruby.
 
 The above gets compiled into the following WebAssembly:
 
@@ -84,21 +84,7 @@ The above gets compiled into the following WebAssembly:
 )
 ```
 
-While I actually quite like the Lispy WebAssembly textual syntax, to me this isn’t as friendly as using Orb and the expressiveness of Elixir.
-
-## How do you use WebAssembly modules?
-
-Inherently given WebAssembly’s name, the natural target is the web. You can load and execute a module using the browser’s `WebAssembly.instantiateStreaming()` like so:
-
-```js
-const { instance } = await WebAssembly.instantiateStreaming(fetch("example.wasm"));
-```
-
-(The same works in Deno, which is what I host [Calculated.World](https://calculated.world/) using.)
-
-In Next.js you can [import then instantiate the wasm module](https://nextjs.org/docs/messages/middleware-dynamic-wasm-compilation).
-
-For other languages Wasmtime is well-supported library for [many languages](https://docs.wasmtime.dev/lang.html).
+While I actually quite like the Lispy WebAssembly textual syntax, I’m sure you agree this feels quite different.
 
 ## Composable puzzle pieces
 
@@ -113,7 +99,7 @@ defmodule HTMLComponent do
   I32.global value: 255
 
   wasm do
-    # Import the u32_to_hex_lower function from the HexConversion module.
+    # Import the u32_to_hex_lower function from the HexConversion module above.
     HexConversion.funcp(:u32_to_hex_lower)
 
     func set_number(value: I32) do
@@ -182,7 +168,11 @@ end
 
 There’s more macros & helpers that I’m experimenting with, and not all of them will make it in. I want conveniences for common problems while avoiding too much magic.
 
-## Use it today
+## How do you use WebAssembly modules?
+
+I’m writing guides on how to manage and run WebAssembly modules at [Calculated.World](https://calculated.world).
+
+## Use Orb today
 
 Orb is currently in alpha as I gather feedback working towards a beta and version 1. You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing/status/1651430346821623809) or [Mastodon]() if you have any questions or thoughts!
 
