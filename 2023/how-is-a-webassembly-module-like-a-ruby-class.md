@@ -4,7 +4,7 @@ date: 2023-07-19
 
 # How is a WebAssembly module like a Ruby class?
 
-You may have heard of WebAssembly. If so, you probably know you can write C or Rust and compile it to WebAssembly. But here’s a different model — after writing a WebAssembly DSL I think it looks a lot like a Ruby class.
+You may have heard of WebAssembly. If so, you probably know you can write C or Rust and compile it to WebAssembly. But here’s a different mental model — after exploring WebAssembly the past couple of years, I think it actually looks a lot like a Ruby class.
 
 ## WebAssembly modules ~= Ruby classes
 
@@ -15,6 +15,12 @@ The WebAssembly module itself is an inert definition — just like a class. To a
 ## WebAssembly instances ~= Ruby objects
 
 And like a class, you can instantiate it multiple times. One WebAssembly module can become multiple WebAssembly instances.
+
+## WebAssembly imports ~= Ruby initializers
+
+When you instantiate your Ruby class, you can pass in initial arguments that help bootstrap the object to an `initializer`.
+
+You can do something very similar in WebAssembly: you can import values and functions from the outside world. For example, you could import a function to generate a random number, or you could import a set of functions to execute SQLite queries.
 
 ## WebAssembly functions ~= Ruby methods
 
