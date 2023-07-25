@@ -22,7 +22,7 @@ Here is a module that converts a integer like `255` to `000000ff`. It accepts th
 defmodule HexConversion do
   use Orb
 
-  wasm_memory pages: 1
+  Memory.pages(1)
 
   wasm U32 do
     func u32_to_hex_lower(
@@ -38,9 +38,9 @@ defmodule HexConversion do
         value = value / 16
 
         if digit > 9 do
-          write_ptr[byte_at!: i] = ?a + digit - 10
+          write_ptr[at!: i] = ?a + digit - 10
         else
-          write_ptr[byte_at!: i] = ?0 + digit
+          write_ptr[at!: i] = ?0 + digit
         end
 
         Digits.continue(if: i > 0)
@@ -94,9 +94,12 @@ Writing software is a lot easier if you break a large problem into smaller bite-
 defmodule HTMLComponent do
   use Orb
   # Imports WebAssembly module with memory, bump allocator, and string joining.
-  use Buffer
+  use SilverOrb.BumpAllocator
+  use SilverOrb.StringBuilder
 
-  I32.global value: 255
+  Memory.pages(2)
+
+  I32.global(value: 255)
 
   wasm do
     # Import the u32_to_hex_lower function from the HexConversion module above.
@@ -110,9 +113,11 @@ defmodule HTMLComponent do
       hex = alloc(9)
       call(:u32_to_hex_lower, @value, hex)
 
-      Buffer.join!([
-        ~S"<p>255 in hex is ", hex, ~S".</p>"
-      ])
+      build! do
+        append!(string: ~S[<p>255 in hex is ])
+        append!(string: hex)
+        append!(string: ~S[.</p>])
+      end
     end
   end
 end
