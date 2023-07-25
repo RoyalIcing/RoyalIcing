@@ -84,7 +84,7 @@ The above gets compiled into the following WebAssembly:
 )
 ```
 
-While I actually quite like the Lispy WebAssembly textual syntax, I’m sure you agree this feels quite different.
+While I actually quite like the Lisp-like WebAssembly textual syntax, I’m not sure I want to write a full program in it.
 
 ## Composable puzzle pieces
 
@@ -179,6 +179,6 @@ I’m writing guides on how to manage and run WebAssembly modules at [Calculated
 
 ## Use Orb today
 
-Orb is currently in alpha as I gather feedback working towards a beta and version 1. You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing/status/1651430346821623809) or [Mastodon]() if you have any questions or thoughts!
+Orb is currently in alpha as I gather feedback working towards a beta and version 1. You can [read Orb’s documentation](https://hexdocs.pm/orb/) or ask me on [Twitter](http://twitter.com/royalicing) or [Mastodon]() if you have any questions or thoughts!
 
 I’m also working on other pieces of the puzzle to make the WebAssembly ecosystem stronger, such as HTML Custom Elements for WebAssembly, and patterns for deploying these modules to the cloud.
