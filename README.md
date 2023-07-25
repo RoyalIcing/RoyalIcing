@@ -1,12 +1,13 @@
 # Patrick Smith — Product Developer & Design Engineer
 
+- 🕸️ I’m working on tooling for WebAssembly like [Orb](https://github.com/royalicing/Orb) and demos at [Calculated.World](https://calculated.world)
 - 💡 I'm working on [collected.press](https://collected.press/) to create buildless sites and blogs. It’s what [this site](https://icing.space/) you are currently reading is built with. The content is fetched from a [GitHub repo](https://github.com/RoyalIcing/RoyalIcing) via CDN and then rendered on a CloudFlare edge server.
 - 🔭 I’m currently writing up my conceptual approach to UI development at [components.guide](https://components.guide/).
 - 🐝 I'm working on [lilapi.com](https://lilapi.com/) to quickly generate dynamic images, such as for Open Graph images.
-- 🌱 I’m currently learning about Elixir, Web Assembly, Deno, Cloudflare Workers, Golang, and also how to write well.
+- 🌱 I’m currently learning about Elixir, WebAssembly, Rust, Deno, Cloudflare Workers, Golang, and writing and making [podcasts](https://lilapi.com/podcast) & [video](https://www.youtube.com/@PatrickGWSmith).
 - I’m fascinated by the intersection between user experience design, software engineering, and product strategy.
 - I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) and [Twitter](https://twitter.com/royalicing).
-- he/him
+- he/him, Patrick
 
 ----
 
