@@ -16,4 +16,4 @@
 - [Introducing Orb, a WebAssembly DSL for Elixir](https://icing.space/2023/introducing-orb)
 - [Introducing Collected Press](/2023/introducing-collected-press)
 - [Write Once, Integrate Everywhere](/2023/write-once-integrate-everywhere)
-- [Web Assembly allows script tags everywhere](/2023/web-assembly-script-tags-everywhere)
+- [WebAssembly allows script tags everywhere](/2023/web-assembly-script-tags-everywhere)
