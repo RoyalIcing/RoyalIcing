@@ -30,7 +30,7 @@ JSON is an example of write once, integrate anywhere. Every programming language
 
 JavaScript has attempted to be the universal language that will run everywhere, but I believe its ecosystem is complicated enough that it’s not fit for that purpose.
 
-Web Assembly shows more promise. It not only runs in all web browsers today, but can run on all mobile devices, laptops, desktops, and servers. In the same way you can give a browser a `<script>` tag and it‘ll download and execute the JavaScript no matter where it is hosted on the internet (that’s how CDNs work), you can download and execute a Web Assembly module on the fly.
+WebAssembly shows more promise. It not only runs in all web browsers today, but can run on all mobile devices, laptops, desktops, and servers. In the same way you can give a browser a `<script>` tag and it‘ll download and execute the JavaScript no matter where it is hosted on the internet (that’s how CDNs work), you can download and execute a WebAssembly module on the fly.
 
 
 [vscode]: https://code.visualstudio.com
