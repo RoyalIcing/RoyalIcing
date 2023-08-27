@@ -6,7 +6,7 @@
 - 🐝 I'm working on [lilapi.com](https://lilapi.com/) to quickly generate dynamic images, such as for Open Graph images.
 - 🌱 I’m currently learning about Elixir, WebAssembly, Rust, Deno, Cloudflare Workers, Golang, and writing and making [podcasts](https://lilapi.com/podcast) & [video](https://www.youtube.com/@PatrickGWSmith).
 - I’m fascinated by the intersection between user experience design, software engineering, and product strategy.
-- I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) and [Twitter](https://twitter.com/royalicing).
+- I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) / [Twitter](https://twitter.com/royalicing) / [Bluesky](https://bsky.app/profile/royalicing.bsky.social).
 - he/him, Patrick
 
 ----
