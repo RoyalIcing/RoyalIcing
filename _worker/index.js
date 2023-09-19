@@ -26,7 +26,7 @@ function addSHAToResponse(res, url, sha) {
     })
     .on('footer[role="contentinfo"] p', {
       element: (element) => {
-        element.after(`<p><a href="https://github.com/RoyalIcing/RoyalIcing/tree/${sha}"><small>SHA: ${sha}</small></a></p>`, { html: true })
+        element.after(`<p>Built using <a href="https://github.com/cool-calm/collected-press">Collected Press</a>. <a href="https://github.com/RoyalIcing/RoyalIcing/tree/${sha}">View source (${sha.slice(0, 8)})</a></p>`, { html: true })
       },
     })
     .transform(res);
