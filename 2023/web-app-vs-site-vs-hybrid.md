@@ -36,7 +36,7 @@ Here’s how I’d break these routes down:
 
 ### Site: landing, pricing, documentation, blog.
 - Will be shared and bookmarked by users.
-- Must be server rendered.
+- Must be server rendered HTML. This means the primary content _must not_ be loaded via JavaScript.
 - Can be enhanced with JavaScript e.g. interactive charts, playground in docs.
 
 ### App: sign in, sign up, dashboard with various sections.
