@@ -35,11 +35,18 @@ Most web apps today are a hybrid. You might have a landing page, pricing page, d
 Here’s how I’d break these routes down:
 
 ### Site: landing, pricing, documentation, blog.
+
+These are content designed to be read and shared by users.
+
 - Will be shared and bookmarked by users.
+- Will be found elsewhere by users e.g. via Google search, social media post.
 - Must be server rendered HTML. This means the primary content _must not_ be loaded via JavaScript.
 - Can be enhanced with JavaScript e.g. interactive charts, playground in docs.
 
 ### App: sign in, sign up, dashboard with various sections.
+
+These are screens designed to be interacted (forms, taps, clicks) by users.
+
 - Can be shared by users, probably within a private circle e.g. work chat.
 - Can be bookmarked by users.
 - Can be browser (instead of server) rendered.
