@@ -4,6 +4,8 @@ date: 2023-10-30
 
 # Web App vs Site vs Hybrid
 
+I first started as a website designer, and now call myself a web app developer. Although what we can build on the web has become much more capable, I think the distiction is still useful. Even if you have both a blog and a dashboard in the same “web app” you should treat them differently: always server-rendering the blog for example.
+
 ## Web site: primarily for reading
 
 - URLs _must_ be shareable and bookmarkable.
@@ -12,7 +14,7 @@ date: 2023-10-30
 - HTML `<body>` _must_ be server rendered to provide to search engine crawlers and read-later services.
 - This means that everything can be read with JavaScript turned off.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- If the route is valid, then the HTTP status must be 2xx.
+- If the subroute is invalid (e.g. article not found), then the HTTP status must be 4xx.
 - `LCP`: The largest content should load within 4 seconds on slow 4G.
 
 ## Web app: primarily for interacting
@@ -22,7 +24,7 @@ date: 2023-10-30
 - HTML `<head>` _must_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
 - HTML `<body>` _can_ be browser rendered to provide interactive controls.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- Even if the route is invalid (e.g. resource not found), the HTTP status can be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP header have been sent.
+- Even if the subroute is invalid (e.g. resource not found), the HTTP status can be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP headers have been sent.
 - Loading data _must_ work on slow and spotty connections.
 - Actions _should_ work on slow and spotty connections.
 
