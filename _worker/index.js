@@ -4,6 +4,17 @@ const allowedUnpkgPackages = ['modern-normalize', 'highlight.js'];
 
 const contentSecurityPolicy = "default-src 'self'; font-src 'self' data:; img-src * data:; media-src *; style-src 'self' 'unsafe-hashes' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' https://cdn.usefathom.com";
 
+const htmlEntities = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+};
+function escapeHTML(str) {
+  return str.replace(/[&<>"']/g, entity => htmlEntities[entity]);
+}
+
 const cacheKeys = Object.freeze({
   headSHA: "head sha",
   pathAndSHA: (path, sha) => `sha:${sha} ${path}`,
@@ -35,11 +46,12 @@ async function addMetadataToResponse(res, url, sha) {
         ogImageURL.searchParams.set("website", "icing.space");
         ogImageURL.searchParams.set("author-name", "Patrick Smith");
         const ogImage = ogImageURL.toString();
-        element.after(`<meta property="og:type" content="${ogType}">`, { html: true });
-        element.after(`<meta property="og:image" content="${ogImage.replace("&", "&amp;")}">`, { html: true });
+        element.after(`<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });
+        element.after(`<meta property="og:image" content="${escapeHTML(ogImage)}">`, { html: true });
         element.after(`<meta name="twitter:site" content="@royalicing">`, { html: true });
+        element.after(`<meta name="twitter:title" content="${escapeHTML(foundTitle)}">`, { html: true });
         element.after(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
-        element.after(`<meta name="twitter:image" content="${ogImage}">`, { html: true });
+        element.after(`<meta name="twitter:image" content="${escapeHTML(ogImage)}">`, { html: true });
       },
     })
     .on('footer[role="contentinfo"] p', {
