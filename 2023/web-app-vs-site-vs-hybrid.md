@@ -14,7 +14,7 @@ I first started as a website designer, and now call myself a web app developer. 
 - HTML `<body>` _must_ be server rendered to provide to search engine crawlers and read-later services.
 - This means that everything can be read with JavaScript turned off.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- If the subroute is invalid (e.g. article not found), then the HTTP status _must_ be 4xx.
+- If the subroute is invalid (e.g. article not found), then the HTTP status _must_ be 4xx. This ensures search engine crawlers won’t add the URL to its index.
 - `LCP`: The largest content should load within 4 seconds on slow 4G.
 
 ## Web app: primarily for interacting
