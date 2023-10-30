@@ -11,7 +11,7 @@ date: 2023-10-30
 - HTML `<head>` _must_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
 - HTML `<body>` _must_ be server rendered to provide to search engine crawlers and read-later services.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- `LCP`: The largest content should load within 8 seconds on slow 4G.
+- `LCP`: The largest content should load within 4 seconds on slow 4G.
 
 ## Web app: primarily for interacting
 
