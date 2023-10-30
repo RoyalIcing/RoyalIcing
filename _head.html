@@ -29,6 +29,7 @@ html {
   --font-display: "Quarto A", "Quarto B", serif;
   --font-secondary: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif;
   --font-body: "Ideal Sans SSm A", "Ideal Sans SSm B", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
 
   --link-decoration: inherit;
   --link-hover-decoration: ;
@@ -124,7 +125,7 @@ main h2 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  font-family: "Gotham SSm A", "Gotham SSm B", system-ui, sans-serif;
+  font-family: var(--font-secondary);
   letter-spacing: -0.02em;
 }
 main h3 {
@@ -135,7 +136,7 @@ main h3 {
   font-weight: bold;
 }
 main pre, main code {
-  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+  font-family: var(--font-mono);
   font-size: 0.875rem;
   max-width: 100%;
   white-space: pre-wrap;
