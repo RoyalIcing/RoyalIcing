@@ -21,7 +21,7 @@ I first started as a website designer, and now call myself a web app developer. 
 
 - URLs _should_ be shareable and bookmarkable.
 - If you change a URL e.g. `/team` to `/about`, then the old URL _should_ 30x redirect to the new URL.
-- HTML `<head>` _must_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
+- HTML `<head>` _should_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
 - HTML `<body>` _can_ be browser rendered to provide interactive controls.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
 - Even if the subroute is invalid (e.g. resource not found), the HTTP status _may_ be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP headers have been sent.
