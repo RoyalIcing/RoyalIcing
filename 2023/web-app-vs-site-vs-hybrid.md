@@ -36,7 +36,7 @@ Here’s how I’d break these routes down:
 
 ### Site: landing, pricing, documentation, blog.
 
-These are content designed to be read and shared by users.
+This is content designed to be read and shared by users.
 
 - Will be shared and bookmarked by users.
 - Will be found elsewhere by users e.g. via Google search, social media post.
