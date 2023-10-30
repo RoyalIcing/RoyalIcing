@@ -2,7 +2,7 @@
 date: 2023-10-30
 ---
 
-# Web App vs Site vs Both
+# Web App vs Site vs Hybrid
 
 ## Web site: primarily for reading
 
@@ -12,6 +12,7 @@ date: 2023-10-30
 - HTML `<body>` _must_ be server rendered to provide to search engine crawlers and read-later services.
 - This means that everything can be read with JavaScript turned off.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
+- If the route is valid, then the HTTP status must be 2xx.
 - `LCP`: The largest content should load within 4 seconds on slow 4G.
 
 ## Web app: primarily for interacting
@@ -21,17 +22,22 @@ date: 2023-10-30
 - HTML `<head>` _must_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
 - HTML `<body>` _can_ be browser rendered to provide interactive controls.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
+- Even if the route is invalid (e.g. resource not found), the HTTP status can be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP header have been sent.
 - Loading data _must_ work on slow and spotty connections.
 - Actions _should_ work on slow and spotty connections.
 
-## A combination of the two
+## Hybrid: both reading and interacting
 
-Most web apps today are a hybrid. You might have a landing & pricing page, documentation, a blog, sign up, sign in, and a dashboard with various sections.
+Most web apps today are a hybrid. You might have a landing page, pricing page, documentation, a blog, sign up, sign in, and a dashboard with various sections.
 
-- Site: landing, pricing, documentation, blog.
-    - Will be shared and bookmarked by users.
-    - Must be server rendered.
-- App: sign in, sign up, dashboard with various sections.
-    - Can be shared by users, probably within a private circle e.g. work chat.
-    - Can be bookmarked by users.
-    - Can be browser (instead of server) rendered.
+Here’s how I’d break these routes down:
+
+### Site: landing, pricing, documentation, blog.
+- Will be shared and bookmarked by users.
+- Must be server rendered.
+- Can be enhanced with JavaScript e.g. interactive charts, playground in docs.
+
+### App: sign in, sign up, dashboard with various sections.
+- Can be shared by users, probably within a private circle e.g. work chat.
+- Can be bookmarked by users.
+- Can be browser (instead of server) rendered.
