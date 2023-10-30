@@ -14,7 +14,7 @@ I first started as a website designer, and now call myself a web app developer. 
 - HTML `<body>` _must_ be server rendered to provide to search engine crawlers and read-later services.
 - This means that everything can be read with JavaScript turned off.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- If the subroute is invalid (e.g. article not found), then the HTTP status must be 4xx.
+- If the subroute is invalid (e.g. article not found), then the HTTP status _must_ be 4xx.
 - `LCP`: The largest content should load within 4 seconds on slow 4G.
 
 ## Web app: primarily for interacting
@@ -24,9 +24,9 @@ I first started as a website designer, and now call myself a web app developer. 
 - HTML `<head>` _must_ be server rendered to provide to social networks and communication tools (e.g. Slack & Discord).
 - HTML `<body>` _can_ be browser rendered to provide interactive controls.
 - HTML `<body>` _must_ have Aria landmarks, such as `main`, `nav`, `banner`, `form`, `search`.
-- Even if the subroute is invalid (e.g. resource not found), the HTTP status can be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP headers have been sent.
+- Even if the subroute is invalid (e.g. resource not found), the HTTP status _may_ be 2xx. This allows HTTP streaming or JavaScript `fetch()` to come after the HTTP headers have been sent.
 - Loading data _must_ work on slow and spotty connections.
-- Actions _should_ work on slow and spotty connections.
+- Actions & forms _should_ work on slow and spotty connections. Submitting a form _must_ tell the user if it failed and _should_ offer a way to recover or retry.
 
 ## Hybrid: both reading and interacting
 
