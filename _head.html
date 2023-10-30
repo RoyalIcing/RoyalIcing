@@ -16,6 +16,9 @@
 html {
   font-size: 125%;
 
+  --textblock-margin-top: 0;
+  --textblock-margin-bottom: 0;
+
   --pink-900: #3D0014;
   --pink-500: #ed64a6;
   --pink-100: #fff5f7;
@@ -55,6 +58,14 @@ ul, ol { margin: 0; padding: 0; }
 li { margin-bottom: var(--list-item-margin-bottom); }
 nav li { font-family: var(--font-secondary); }
 section, article { letter-spacing: 0.01em; }
+p, ul, ol, pre {
+  margin-top: var(--textblock-margin-top);
+  margin-bottom: var(--textblock-margin-bottom);
+}
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 main, footer[role=contentinfo] {
   background: var(--main-bg);
@@ -65,8 +76,11 @@ main, footer[role=contentinfo] {
   padding-left: 3%;
   padding-right: 3%;
 
+  --textblock-margin-top: 1.5rem;
+  --textblock-margin-bottom: 1.5rem;
+
   --list-style: disc;
-  --list-padding-left: 1rem;
+  --list-margin-top: 1rem;
   --list-item-margin-bottom: 0.5rem;
 
   --link-border-bottom: 1px solid var(--pink-500);
@@ -111,10 +125,6 @@ header[role=banner] a[href="/"] {
   margin-right: 0.5rem;
 }
 
-main p, main pre, main ul, main ol {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
 main ul {
   list-style-type: var(--list-style);
   padding-left: var(--list-padding-left);
