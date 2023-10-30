@@ -109,9 +109,17 @@ header[role=banner] a[href="/"] {
   margin-right: 0.5rem;
 }
 
-main p, main pre {
+main p, main pre, main ul, main ol {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+main ul {
+  list-style-type: var(--list-style);
+  padding-left: var(--list-padding-left);
+}
+main ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
 }
 main h1 {
   font-size: 2rem;
@@ -122,7 +130,7 @@ main h1 {
 main h2 {
   font-size: 1.25rem;
   line-height: 1.333;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
   font-family: var(--font-secondary);
@@ -140,14 +148,6 @@ main pre, main code {
   font-size: 0.875rem;
   max-width: 100%;
   white-space: pre-wrap;
-}
-main ul {
-  list-style-type: var(--list-style);
-  padding-left: var(--list-padding-left);
-}
-main ol {
-  list-style-type: decimal;
-  padding-left: 1rem;
 }
 main figcaption, .wp-block-image.wp-block-image figcaption {
   text-align: center;
