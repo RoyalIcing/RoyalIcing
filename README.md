@@ -1,6 +1,6 @@
 # Patrick Smith — Product Developer & Design Engineer
 
-- 🕸️ I’m working on tooling for WebAssembly like [Orb](https://github.com/RoyalIcing/Orb) and demos at [Calculated.World](https://calculated.world)
+- 🕸️ I’m working on [Orb, a language for writing WebAssembly](https://github.com/RoyalIcing/Orb), and [other WebAssembly demos at Calculated.World](https://calculated.world)
 - 🌱 I’m enjoy creating with Elixir, WebAssembly, Rust, Deno, Cloudflare Workers, Golang, putting words into writing, and making [video](https://www.youtube.com/@PatrickGWSmith).
 - 💬 I’m fascinated by the intersection between user experience design, software engineering, and product strategy, all of which I talk about on my podcast [Runtime Reverie](https://runtimereverie.com).
 - 🪺 I’ve written up my approach to building UIs at [components.guide](https://components.guide/).
