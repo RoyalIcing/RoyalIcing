@@ -2,7 +2,7 @@
 ---
 # Lantern
 
-<img src="lantern-logo-256.png" width="128" height="128" alt="Lantern’s icon">
+<img src="./lantern-logo-256.png" width="128" height="128" alt="Lantern’s icon">
 
 A Mac app for crawling and auditing your website for SEO and social media.
 
