@@ -8,7 +8,7 @@
 
 ## Contact
 
-- I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) / [Twitter](https://twitter.com/royalicing) / [Bluesky](https://bsky.app/profile/royalicing.bsky.social). You can refer to me by he/him, Patrick.
+- I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) / [X](https://twitter.com/royalicing) / [Bluesky](https://bsky.app/profile/royalicing.bsky.social). You can refer to me by he/him, Patrick.
 
 ----
 
