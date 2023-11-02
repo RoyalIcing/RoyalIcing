@@ -22,11 +22,11 @@ const cacheKeys = Object.freeze({
 });
 
 async function addMetadataToResponse(res, url, sha) {
-  let foundTitle = ''
+  let foundTitleHTML = ''
   await new HTMLRewriter()
     .on('h1', {
       text(chunk) {
-        foundTitle += chunk.text
+        foundTitleHTML += chunk.text
       },
     })
     .transform(res.clone())
@@ -36,7 +36,7 @@ async function addMetadataToResponse(res, url, sha) {
   return new HTMLRewriter()
     .on('head title', {
       element: (element) => {
-        element.setInnerContent(`${foundTitle} — Royal Icing`, { html: false });
+        element.setInnerContent(`${foundTitleHTML} — Royal Icing`, { html: true });
 
         const ogType = url.pathname === "/" ? "website" : "article";
         const ogImageURL = new URL("http://cdn.lilapi.com/1/github/RoyalIcing?width=1200&height=628");
@@ -49,7 +49,7 @@ async function addMetadataToResponse(res, url, sha) {
         element.after(`<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });
         element.after(`<meta property="og:image" content="${escapeHTML(ogImage)}">`, { html: true });
         element.after(`<meta name="twitter:site" content="@royalicing">`, { html: true });
-        element.after(`<meta name="twitter:title" content="${escapeHTML(foundTitle)}">`, { html: true });
+        element.after(`<meta name="twitter:title" content="${foundTitleHTML}">`, { html: true });
         element.after(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
         element.after(`<meta name="twitter:image" content="${escapeHTML(ogImage)}">`, { html: true });
       },
