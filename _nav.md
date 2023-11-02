@@ -1,6 +1,6 @@
 - [Royal Icing](/)
 - [Blog](/blog)
-- [Projects](/projects)
+- [Tools](/tools)
 - [Mastodon](https://hachyderm.io/@royalicing)
 - [Twitter](https://twitter.com/royalicing)
 - [GitHub](https://github.com/RoyalIcing)
