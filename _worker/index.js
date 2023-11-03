@@ -39,7 +39,7 @@ async function addMetadataToResponse(res, url, sha) {
         element.setInnerContent(`${foundTitleHTML} — Royal Icing`, { html: true });
 
         const ogType = url.pathname === "/" ? "website" : "article";
-        const ogImageURL = new URL("http://cdn.lilapi.com/1/github/RoyalIcing?width=1200&height=628");
+        const ogImageURL = new URL("https://cdn.lilapi.com/1/github/RoyalIcing?width=1200&height=628");
         ogImageURL.searchParams.set("t1", foundTitleHTML.replace("&amp;", "&"));
         ogImageURL.searchParams.set("t1-color", "#ed64a6");
         // ogImageURL.searchParams.set("t2-color", "#ed64a6");
