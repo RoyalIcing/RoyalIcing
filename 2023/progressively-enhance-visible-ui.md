@@ -8,7 +8,7 @@ So often making for the web as a sighted user I think of the visual experience f
 
 What’s the layout? Which color palette? How does it look on mobile?
 
-I’ll then mock something up in Figma or throw together a demo in Tailwind. “Ah yes, I can it now. I think that works, but maybe I’ll tweak this and that.”
+I’ll then mock something up in Figma or throw together a demo in Tailwind. “Ah yes, I can see it now. I think that works, but maybe I’ll tweak this color and that border.”
 
 But what about accessibility? I want it to work for someone who will not see but hear the page with their screen reader.
 
