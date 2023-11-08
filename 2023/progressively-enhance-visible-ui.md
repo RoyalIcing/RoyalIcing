@@ -1,7 +1,8 @@
 ---
+date: 2023-11-09
 ---
 
-# Your visible UI should be a progressive enhancememt
+# Your visible UI should be a progressive enhancement
 
 So often making for the web as a sighted user I think of the visual experience first.
 
