@@ -8,7 +8,7 @@ date: 2023-12-02
 
 “It’s threenines,” replied the pessimist.
 
-“Great, I’m on. Let me show you this web app I just made,” said the optimistic.
+“Great, I’m on. Let me show you this web app I just made,” said the optimist.
 
 “It looks fantastic! It sure loaded quickly. Your Lighthouse score must be high,” the pessimist said encouragingly.
 
