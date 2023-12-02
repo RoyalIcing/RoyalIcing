@@ -34,7 +34,7 @@ The pessimist pulled out their phone. “You carry around that cheap thing?” e
 
 The optimist pushed the phone to the side. “Why do you use that old slow thing? Here, try mine.”
 
-The pessimist took the optimist’s phone, tapped several times and invited a look at the same broken dashboard. “Nope, it’s nothing to do with the device,” the pessimist said, “it’s the network. You can’t rely on the network being 100% reliable just like you can’t rely on a bus running on time or always being available. Sometimes buses get caught in traffic jams or break down or too many drivers are out sick. It’s the same with making apps for the internet — things don’t always work. So you better plan for that accordingly: by expecting the network to break you actually make you apps more robust and reliable. And you’ll have fewer bugs to fix.”
+The pessimist took the optimist’s phone, tapped several times and invited a look at the same broken dashboard. “Nope, it’s nothing to do with the device,” the pessimist said, “it’s the network. You can’t rely on the network being 100% reliable just like you can’t rely on a bus running on time or always being available. Sometimes buses get caught in traffic jams or break down or too many drivers are out sick. It’s the same with making apps for the internet — things don’t always work. So you better plan for that accordingly: by expecting the network to break you actually make your apps more robust and reliable. And you’ll have fewer bugs to fix.”
 
 The optimist looked resigned. “You always make pessimism sound so positive. Next time let’s meet at my house and you’ll see how great tech really is.”
 
