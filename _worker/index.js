@@ -21,26 +21,30 @@ const cacheKeys = Object.freeze({
   pathLatest: (path) => `latest: ${path}`,
 });
 
-async function addMetadataToResponse(res, url, sha) {
-  let foundTitleHTML = ''
-  await new HTMLRewriter()
-    .on('h1', {
-      text(chunk) {
-        foundTitleHTML += chunk.text
-      },
-    })
-    .transform(res.clone())
-    .text();
+async function addMetadataToResponse(res, url, sha, { title } = {}) {
+  if (!title) {
+    let foundTitleHTML = ''
+    await new HTMLRewriter()
+      .on('h1', {
+        text(chunk) {
+          foundTitleHTML += chunk.text
+        },
+      })
+      .transform(res.clone())
+      .text();
+    // TODO: unescape all HTML entities:
+    title = foundTitleHTML.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+  }
 
   // TODO: add link[rel=canonical]
   return new HTMLRewriter()
     .on('head title', {
       element: (element) => {
-        element.setInnerContent(`${foundTitleHTML} — Royal Icing`, { html: true });
+        element.setInnerContent(`${title} — Royal Icing`, { html: false });
 
         const ogType = url.pathname === "/" ? "website" : "article";
         const ogImageURL = new URL("https://cdn.lilapi.com/1/github/RoyalIcing?width=1200&height=628");
-        ogImageURL.searchParams.set("t1", foundTitleHTML.replace("&amp;", "&"));
+        ogImageURL.searchParams.set("t1", title);
         ogImageURL.searchParams.set("t1-color", "#ed64a6");
         // ogImageURL.searchParams.set("t2-color", "#ed64a6");
         ogImageURL.searchParams.set("website", "icing.space");
@@ -49,7 +53,7 @@ async function addMetadataToResponse(res, url, sha) {
         element.after(`<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });
         element.after(`<meta property="og:image" content="${escapeHTML(ogImage)}">`, { html: true });
         element.after(`<meta name="twitter:site" content="@royalicing">`, { html: true });
-        element.after(`<meta name="twitter:title" content="${foundTitleHTML}">`, { html: true });
+        element.after(`<meta name="twitter:title" content="${escapeHTML(title)}">`, { html: true });
         element.after(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
         element.after(`<meta name="twitter:image" content="${escapeHTML(ogImage)}">`, { html: true });
       },
@@ -82,13 +86,25 @@ export default {
       });
     }
 
+    let title = undefined;
     let strategy = "latest";
 
     if (url.pathname === "/blog") {
+      title = "The Royal Icing Blog by Patrick Smith"
       // strategy = "stale-while-revalidate";
+      // strategy = "last-known-sha.stream";
       strategy = "last-known-sha";
     } else {
       strategy = "last-known-sha";
+    }
+
+    if (url.searchParams.has("stream")) {
+      strategy = "last-known-sha.stream";
+    }
+
+    if (url.pathname.startsWith("/nocache/")) {
+      strategy = "nocache";
+      url.pathname = url.pathname.replace(/^\/nocache/, "");
     }
 
     if (url.pathname.startsWith("/old-sha/")) {
@@ -112,11 +128,24 @@ export default {
       lastKnownSHA = await headSHAPromise;
     }
 
-    const sha = await (strategy === "last-known-sha" ? lastKnownSHA : headSHAPromise);
+    const sha = await (strategy.startsWith("last-known-sha") ? lastKnownSHA : headSHAPromise);
+
+    if (strategy === "last-known-sha.stream") {
+      const [res, done] = await source.serveStreamedURL(url, { commitSHA: sha });
+      ctx.waitUntil(done);
+      // return res;
+      return addMetadataToResponse(res, url, sha, { title })
+    }
+
+    if (strategy !== "nocache") {
+      const res = await source.serveURL(url, { commitSHA: sha });
+      return addMetadataToResponse(res, url, sha, { title });
+    }
+
+    let res = null;
 
     const cacheKey = cacheKeys.pathAndSHA(url.pathname, sha);
     let cachedContent = await env.swr_cache.get(cacheKey, { type: "stream" });
-    let res = null;
 
     if (cachedContent == null) {
       if (strategy === "stale-while-revalidate") {
@@ -144,6 +173,6 @@ export default {
       res = new Response(cachedContent, { headers: { "content-type": mimeType, "content-security-policy": contentSecurityPolicy } });
     }
 
-    return addMetadataToResponse(res, url, sha);
+    return addMetadataToResponse(res, url, sha, { title });
   }
 }
