@@ -50,12 +50,12 @@ async function addMetadataToResponse(res, url, sha, { title } = {}) {
         ogImageURL.searchParams.set("website", "icing.space");
         ogImageURL.searchParams.set("author-name", "Patrick Smith");
         const ogImage = ogImageURL.toString();
-        element.after(`<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });
-        element.after(`<meta property="og:image" content="${escapeHTML(ogImage)}">`, { html: true });
-        element.after(`<meta name="twitter:site" content="@royalicing">`, { html: true });
-        element.after(`<meta name="twitter:title" content="${escapeHTML(title)}">`, { html: true });
-        element.after(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
-        element.after(`<meta name="twitter:image" content="${escapeHTML(ogImage)}">`, { html: true });
+        element.after(`\n<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });
+        element.after(`\n<meta property="og:image" content="${escapeHTML(ogImage)}">`, { html: true });
+        element.after(`\n<meta name="twitter:site" content="@royalicing">`, { html: true });
+        element.after(`\n<meta name="twitter:title" content="${escapeHTML(title)}">`, { html: true });
+        element.after(`\n<meta name="twitter:card" content="summary_large_image">`, { html: true });
+        element.after(`\n<meta name="twitter:image" content="${escapeHTML(ogImage)}">`, { html: true });
       },
     })
     .on('footer[role="contentinfo"] p', {
