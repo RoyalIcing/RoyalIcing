@@ -92,8 +92,8 @@ export default {
     if (url.pathname === "/blog") {
       title = "The Royal Icing Blog by Patrick Smith"
       // strategy = "stale-while-revalidate";
-      // strategy = "last-known-sha.stream";
-      strategy = "last-known-sha";
+      strategy = "last-known-sha.stream";
+      // strategy = "last-known-sha";
     } else {
       strategy = "last-known-sha";
     }
