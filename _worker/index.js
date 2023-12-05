@@ -2,7 +2,7 @@ import { sourceFromGitHubRepo } from "@collected/press-server";
 
 const allowedUnpkgPackages = ['modern-normalize', 'highlight.js'];
 
-const contentSecurityPolicy = "default-src 'self'; font-src 'self' data:; img-src * data:; media-src *; style-src 'self' 'unsafe-hashes' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' https://cdn.usefathom.com";
+const contentSecurityPolicy = "default-src 'self'; font-src 'self' data:; img-src * data:; media-src *; style-src 'self' 'unsafe-hashes' 'unsafe-inline'; script-src 'self' https://cdn.usefathom.com";
 
 const htmlEntities = {
   '&': '&amp;',
