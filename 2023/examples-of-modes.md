@@ -22,7 +22,7 @@ So here’s a list of many modes in our smartphone and online worlds:
 - Dark mode
 - Do not disturb
 - Airplane & low power mode
-- Cookie consent pop-up
+- Cookie consent pop-up (did the user tap “Accept” or “Decline”?)
 - Subscription pricing tiers
 - Browser’s reader mode
 - Offline mode
