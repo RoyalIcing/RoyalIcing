@@ -9,9 +9,9 @@ date: 2023-12-18
 - Editing vs viewing a photo
 - Browser’s incognito mode
 - Bezier path edit points mode
-- Maps turn-by turn directions
+- Maps turn-by-turn directions
 - Editing iPhone home screen
-- Camera night-mode
+- Camera night mode
 - Full screening a YouTube video
 - Dark mode
 - Do not disturb
@@ -31,4 +31,4 @@ date: 2023-12-18
 - Server vs client rendering a React component
 - `package.json`’s `type` of `module` vs `commonjs`
 - HTTP `Transfer-Encoding: chunked`
-- User agent sniffing e.g. for detect search engine crawler or a particular browser
+- User agent sniffing e.g. detecting search engine crawler or a particular browser
