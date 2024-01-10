@@ -30,7 +30,7 @@ So what are the issues with this approach?
 
 First, these media queries can get bloated. You’ll find that you’ll define your base rules first using a mobile-first approach, and then repeat those rules with overrides within media queries. You could put all of these rules for the same media query together underneath, or could you have the media query override live next to its mobile-first rule and rely on some sort of CSS optimiser or compression so the repetition doesn’t contribute to an increase in file size.
 
-Second, knowing what to override can lead to complex code. Perhaps you only need to override the rules for nav a and not for nav elements within your media queries. These specifics lead to harder to understand code.
+Second, knowing what to override can lead to complex code. Perhaps you only need to override the rules for `nav a` and not for `nav` elements within your media queries. These specifics lead to harder to understand code.
 
 ```css
 nav {
@@ -67,7 +67,7 @@ h1 {
 
 nav {
   background-color: lightskyblue;
-  
+
   a {
     display: block;
     padding: 0.5rem;
@@ -134,17 +134,26 @@ This works not only for viewport width checks but also for media queries that ch
   --text-color: white;
 }
 
-@media (prefers-color-scheme: light) { /* We respect a user's browser preference */
+@media (prefers-color-scheme: light) {
+  /* We respect a user's browser preference */
   :root {
     --text-color: black;
   }
 }
 
-[data-mode=light] { /* We allow users to switch light/dark mode */
+[data-mode="light"] {
+  /* We allow users to switch light/dark mode */
   --text-color: black;
 }
 
-p, h1, h2, h3, h4, figure, ul, ol {
+p,
+h1,
+h2,
+h3,
+h4,
+figure,
+ul,
+ol {
   color: var(--text-color);
 }
 ```
