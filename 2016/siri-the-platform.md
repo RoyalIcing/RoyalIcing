@@ -108,4 +108,4 @@ Siri Threads combine the traditional Siri assistant with third party services an
 
 It unifies many disparate parts of iOS into a consistent paradigm, and allows third-party services to powerfully integrate with iOS and Apple’s other operating systems.
 
-*Note: this was [originally published on Medium back when it was cool](https://medium.com/@concreteniche/siri-the-new-platform-deec9cc4d5db).*
+*Note: this was [originally published on Medium back when it was cool](https://medium.com/@concreteniche/siri-the-new-platform-deec9cc4d5db). Here’s [an archive.org link](https://web.archive.org/web/20170114142820/https://medium.com/@concreteniche/siri-the-new-platform-deec9cc4d5db) if you wonder if I retroactively wrote this.*
