@@ -15,6 +15,7 @@
 
 ## Recent Blog Posts
 
+- [How Components and Behavior-Driven Tests Overlap](https://icing.space/2024/how-components-and-bdd-overlap)
 - [Think of your visual UI as progressive enhancement on an accessible core](https://icing.space/2023/visual-ui-as-progressive-enhancement)
 - [An Optimist uses a Pessimist’s Wi-Fi](https://icing.space/2023/optimist-pessimist-wifi)
 - [Web App vs Site vs Hybrid](https://icing.space/2023/web-app-vs-site-vs-hybrid)
