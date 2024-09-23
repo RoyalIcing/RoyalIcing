@@ -6,3 +6,11 @@ update:
 
 dev:
 	cd _worker && npm start
+
+MARKDOWN = $(wildcard **/*.md)
+
+robots.sqlite:
+	zig run robots.c -lsqlite3 -- $(MARKDOWN)
+
+echo: **/*.md
+	echo $(MARKDOWN)
