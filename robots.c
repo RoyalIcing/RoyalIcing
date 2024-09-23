@@ -4,7 +4,7 @@
 #include <sqlite3.h>
 
 void ok(int result, sqlite3 *db);
-char *file_path_to_route_path(const char *file_path);
+const char *file_path_to_route_path(const char *file_path);
 
 int main(int argc, char **argv)
 {
@@ -37,7 +37,7 @@ int main(int argc, char **argv)
         printf("\n");
 
         const char *file_path = argv[argi];
-        char *route_path = file_path_to_route_path(file_path);
+        const char *route_path = file_path_to_route_path(file_path);
         if (route_path == NULL)
             continue;
 
@@ -65,7 +65,7 @@ int main(int argc, char **argv)
     printf("done!\n");
 }
 
-char *file_path_to_route_path(const char *file_path)
+const char *file_path_to_route_path(const char *file_path)
 {
     if (strstr(file_path, ".md") == NULL)
         return NULL;
