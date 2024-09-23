@@ -8,13 +8,13 @@ const char *file_path_to_route_path(const char *file_path);
 
 int main(int argc, char **argv)
 {
-    // printf("hello world");
     sqlite3 *db;
     sqlite3_stmt *insert_route;
     sqlite3_stmt *select_route_count;
     int result;
 
-    ok(sqlite3_open(":memory:", &db), db);
+    // ok(sqlite3_open(":memory:", &db), db);
+    ok(sqlite3_open("robots.sqlite", &db), db);
 
     ok(sqlite3_exec(db, "CREATE TABLE routes ("
                         "path TEXT NOT NULL PRIMARY KEY"
