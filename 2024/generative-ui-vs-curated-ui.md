@@ -18,7 +18,7 @@ He is also bullish on generated user interfaces, and again I think it needs a pi
 
 The best analogy is going to a restaurant vs having a private chef. When you go to a restaurant the chef and staff have worked out a menu ahead of time. They have generally settled on a broad cuisine and then made specific recipes they know they can create within a quick time to many patrons, and they give them all names and put them on a list called a menu.
 
-You don’t go to a French restaurant and ask for sushi. You don’t instruct the waitor to cook something that’s not on the menu. The menu has been designed via a piece of graphic design that is easy to digest visually with a particular dining experience in mind.
+You don’t go to a French restaurant and ask for sushi. You don’t instruct the waiter to cook something that’s not on the menu. The menu has been designed via a piece of graphic design that is easy to digest visually with a particular dining experience in mind.
 
 > This is where you start to see the bridge: what I am describing is an application of generative AI, specifically to on-demand UI interfaces. It’s also an application that you can imagine being useful on devices that already exist. A watch application, for example, would be much more usable if, instead of trying to navigate by touch like a small iPhone, it could simply show you the exact choices you need to make at a specific moment in time.
 
