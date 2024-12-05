@@ -6,7 +6,7 @@ date: 2024-12-05
 
 In the media I think there’s been much too much recency bias with Generative AI and Wearables, where since they are recently developed people assume they are the natural next step.
 
-I have high regards for Stratechery: when he first started I think he got a lot of things right. Lately he’s been very bullish on wearables and AI, and has switched from analyzing the mobile revolution (which was in transition when he started writing) to forecasting wearable AI, which has yet to be proven.
+I have high regards for Stratechery: when he first started I think he got a lot of things right about mobile, Apple & Microsoft. Lately he’s been very bullish on wearables and AI, and has switched from analyzing the mobile revolution (which was in transition when he started writing) to forecasting wearable AI, which has yet to be proven.
 
 ![Stratechery’s generative AI bridge](./stratechery-generative-ai-bridge-9.png)
 
