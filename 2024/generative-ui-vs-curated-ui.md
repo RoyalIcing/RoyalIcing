@@ -28,7 +28,7 @@ And yes, it might be able to tailor it to your preferences, but that’s not tha
 
 He looks at the smart watches, but to me it’s really highlighting that Apple hasn’t done a particular great job designing and curating the Apple Watch user interface. It’s trying to stuff too much onto the wrist, like Microsoft’s strategy of putting Windows on mobile. An insanely great Apple Watch interface would be possible without using any generative AI.
 
-If a UI is purely generative it’s not deterministic, so one person might get a totally different experience to another. So then what is your brand about if it has no consistency? To get more uniformity you’ll have to dial the generative parts back, and then learn which bits resonate with customers and which don’t, and then you may as well freeze those parts as polished UIs rather than generating them on-the-fly.
+If a UI is purely generative it’s not deterministic, so one person might get a totally different experience to another. So then what is your brand about if it has no consistency? To gain more uniformity you’ll have to dial the generative parts back, and then learn which bits resonate with customers and which don’t, and then you may as well freeze those parts as further polished UIs rather than generating them on-the-fly.
 
 And generative AI is a commodity, so how does using it differentiate your experience from another company? Everyone will be able to generate the same UI controls and patterns. Brands that care are going to want to have more control, and that requires an editor’s touch to tailor it for people, who remain 100% of customers even in this AI world.
 
