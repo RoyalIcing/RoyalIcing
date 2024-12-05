@@ -8,6 +8,8 @@ In the media I think there’s been much too much recency bias with Generative A
 
 I have high regards for Stratechery: when he first started I think he got a lot of things right. Lately he’s been very bullish on wearables and AI, and has switched from analyzing the mobile revolution (which was in transition when he started writing) to forecasting wearable AI, which has yet to be proven.
 
+![Stratechery’s generative AI bridge](./stratechery-generative-ai-bridge-9.png)
+
 Specifically [he’s positioning Generative AI and Wearables](https://stratechery.com/2024/the-gen-ai-bridge-to-the-future/) as the successor to Internet + Mobile, and I think it’s just fundamentally wrong. I can imagine wearables being useful but I’m bearish on them becoming the primary device for quite a while.
 
 > This, I think, is the future: the exact UI you need — and nothing more — exactly when you need it, and at no time else. This specific example was, of course, programmed deterministically, but you can imagine a future where the glasses are smart enough to generate UI on the fly based on the context of not just your request, but also your broader surroundings and state.
