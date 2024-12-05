@@ -16,6 +16,10 @@ Specifically [he’s positioning Generative AI and Wearables](https://stratecher
 
 He is also bullish on generated user interfaces, and again I think it needs a pinch of salt. Graphical user interfaces are about curation: you decide what to put in and what should be left out.
 
+The best analogy is going to a restaurant vs having a private chef. When you go to a restaurant the chef and staff have worked out a menu ahead of time. They have generally settled on a broad cuisine and then made specific recipes they know they can create within a quick time to many patrons, and they give them all names and put them on a list called a menu.
+
+You don’t go to a French restaurant and ask for sushi. You don’t instruct the waitor to cook something that’s not on the menu. The menu has been designed via a piece of graphic design that is easy to digest visually with a particular dining experience in mind.
+
 > This is where you start to see the bridge: what I am describing is an application of generative AI, specifically to on-demand UI interfaces. It’s also an application that you can imagine being useful on devices that already exist. A watch application, for example, would be much more usable if, instead of trying to navigate by touch like a small iPhone, it could simply show you the exact choices you need to make at a specific moment in time.
 
 He looks at the smart watches, but to me it’s really highlighting that Apple hasn’t done a particular great job designing and curating the Apple Watch user interface. It’s trying to stuff too much onto the wrist, like Microsoft’s strategy of putting Windows on mobile. A insanely great Apple Watch interface would be possible without using any generative AI.
