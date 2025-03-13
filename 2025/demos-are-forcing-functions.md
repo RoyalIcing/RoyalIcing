@@ -4,7 +4,7 @@ date: 2025-03-13
 
 # Demos are Forcing Functions
 
-John Gruber writes [Something Is Rotten in the State of Cupertino](https://daringfireball.net/2025/03/something_is_rotten_in_the_state_of_cupertino).
+John Gruber writes about Apple Intelligence’s vaporware aspects in [Something Is Rotten in the State of Cupertino](https://daringfireball.net/2025/03/something_is_rotten_in_the_state_of_cupertino).
 
 It feels quaint today, but this is why Steve Jobs so often immediately demoed using the feature he had just announced. A demo acts as a forcing function to produce real, working software. And preceding that was an inner forcing function of the software being demoed within Apple to Steve Jobs, who was notorious for nit-picking and finding where it broke.
 
