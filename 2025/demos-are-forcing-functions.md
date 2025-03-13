@@ -12,7 +12,7 @@ When Steve Jobs unveiled the Mac’s new user interface he said [“let me show 
 
 When Time Machine’s 3D windows-floating-in-a-galaxy design was first shown, was it in a video with catchy music? No, it was via [Scott Forstall clicking on the Dock and demoing it live](https://youtube.com/watch?v=XSNGrEOqegc&t=2195).
 
-Apple’s high production event videos today often animate a new feature using slick motion graphics. A version of the UI is recreated that looks to my eyes more impressive than using the software itself. The danger is that leads to a team making an ad for software that the team creating it has yet to create.
+Apple’s high production event videos today often introduce new features using slick motion graphics. An animated version of the UI is recreated that looks to my eyes more impressive than using the software itself. The danger is that leads to a team making an ad for software that the team creating it has yet to create.
 
 Steve Jobs did demo unfinished software, like when [he presented the secretly precarious iPhone software in 2007](https://www.macrumors.com/2013/10/04/former-apple-engineer-gives-behind-the-scenes-look-at-the-original-iphone-introduction/). But I believe there were many internal demos to get to that point on stage, and many after in the months to what eventually shipped in June.
 
