@@ -4,7 +4,7 @@ date: 2025-03-27
 
 # Infinite Bicycles for the Mind
 
-Information entropy has this concept of “surprise”. If a baby says “goo goo gaa gaa” all the time you’d be very surprised if the next words out of its mouth were “all religions, arts and sciences are branches of the same tree.” Woah there, little Einstein…
+Information theory has this concept of “surprise”. If a baby says “goo goo gaa gaa” all the time you’d be very surprised if the next words out of its mouth were “all religions, arts and sciences are branches of the same tree.” Woah there, little Einstein…
 
 You form a prediction of what the baby is likely to say next. More “goo goo”: less surprising. Philosophy: more surprising.
 
@@ -22,7 +22,7 @@ Compare this to when I’ve asked ChatGPT about why objects emit infrared light 
 
 I‘m staring at concepts like “energy states” and weird symbols and familiar words like “heat” but used in an unfamiliar context. Sound familiar? I’ve entered a world I don’t really understand. The surprise is high, and I‘ve no idea if it’s accurate or what it’s going to say next. If I was to change a word there’s a good chance I’ve introduced a mistake.
 
-Back to entropy, at least the informational kind. When using generative AI I have a level of familarity with the subject I’m getting it to output. For me, this means I can gauge a generated React component well but a paragraph on quantum physics poorly. The React component code will hopefully leave me unsurprised, which lets me move faster to where I’ve already planned. The physics lesson will be surprising and unpredictable as I have little idea what to expect next, and I’ll gain slightly more familiarity by asking follow-up questions.
+Back to [entropy](<https://en.wikipedia.org/wiki/Entropy_(information_theory)>), at least the informational kind. When using generative AI I have a level of familarity with the subject I’m getting it to output. For me, this means I can gauge a generated React component well but a paragraph on quantum physics poorly. The React component code will hopefully leave me unsurprised, which lets me move faster to where I’ve already planned. The physics lesson will be surprising and unpredictable as I have little idea what to expect next, and I’ll gain slightly more familiarity by asking follow-up questions.
 
 I think it’s helpful to know which of the two modes you are in.
 
