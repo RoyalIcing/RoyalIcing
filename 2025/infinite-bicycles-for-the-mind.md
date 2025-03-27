@@ -8,7 +8,7 @@ Information theory has this concept of “surprise”. If a baby says “goo goo
 
 You form a prediction of what the baby is likely to say next. More “goo goo”: less surprising. Philosophical observations: more surprising.
 
-When generative coding there’s also an element of surprise. Say you’ve never coded before and decide to vibe a dashboard page. Perhaps the layout it generates — a sidebar on the left and a table on the right — are what you expected because you’ve used many web apps and that’s how they typically look. It amazes you it was able to create that but the choices it made were unsurprising.
+When generative coding there’s also an element of surprise. Say you’ve never coded before and decide to [vibe](https://x.com/karpathy/status/1886192184808149383) a dashboard page. Perhaps the layout it generates — a sidebar on the left and a table on the right — are what you expected because you’ve used many web apps and that’s how they typically look. It amazes you it was able to create that but the choices it made were unsurprising.
 
 But then you feel brave to look at the code and you’re in another world, with `onState` and familiar words like “table” repeated but in angled brackets and lots of punctuation. It‘s very surprising and highly unpredictable. If you were to attempt to change some of the code there’s a high chance it would break.
 
