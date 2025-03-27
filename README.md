@@ -1,6 +1,6 @@
 # Patrick Smith — Product Developer & Design Engineer
 
-## Recent Blog Posts
+## Blog
 
 - [Infinite Bicycles for the Mind](https://icing.space/2025/infinite-bicycles-for-the-mind)
 - [Automated Tests Should Act as Accessible Documentation](https://icing.space/2025/automated-tests-accessible-documentation)
