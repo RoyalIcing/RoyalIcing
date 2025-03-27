@@ -6,7 +6,7 @@ date: 2025-03-27
 
 Information theory has this concept of “surprise”. If a baby says “goo goo gaa gaa” all the time you’d be very surprised if the next words out of its mouth were “all religions, arts and sciences are branches of the same tree.” Woah there, little Einstein…
 
-You form a prediction of what the baby is likely to say next. More “goo goo”: less surprising. Philosophy: more surprising.
+You form a prediction of what the baby is likely to say next. More “goo goo”: less surprising. Philosophical observations: more surprising.
 
 When generative coding there’s also an element of surprise. Say you’ve never coded before and decide to vibe a dashboard page. Perhaps the layout it generates — a sidebar on the left and a table on the right — are what you expected because you’ve used many web apps and that’s how they typically look. It amazes you it was able to create that but the choices it made were unsurprising.
 
