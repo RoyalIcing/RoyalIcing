@@ -8,18 +8,19 @@
 
 ## Contact
 
-- I’m @royalicing on [Mastodon](http://hachyderm.io/@royalicing) / [X](https://twitter.com/royalicing) / [Bluesky](https://bsky.app/profile/royalicing.bsky.social). You can refer to me by he/him, Patrick.
+- I’m @royalicing on [Bluesky](https://bsky.app/profile/royalicing.bsky.social) / [X](https://twitter.com/royalicing) / [Mastodon](http://hachyderm.io/@royalicing). You can refer to me by he/him/Patrick.
 - My [resume as a PDF](/resume.pdf).
 
 ---
 
 ## Recent Blog Posts
 
+- [Infinite Bicycles for the Mind](https://icing.space/2025/infinite-bicycles-for-the-mind)
+- [Automated Tests Should Act as Accessible Documentation](https://icing.space/2025/automated-tests-accessible-documentation)
 - [Demos are Forcing Functions](https://icing.space/2025/demos-are-forcing-functions)
 - [How Components and Behavior-Driven Tests Overlap](https://icing.space/2024/how-components-and-bdd-overlap)
 - [Think of your visual UI as progressive enhancement on an accessible core](https://icing.space/2023/visual-ui-as-progressive-enhancement)
 - [An Optimist uses a Pessimist’s Wi-Fi](https://icing.space/2023/optimist-pessimist-wifi)
-- [Web App vs Site vs Hybrid](https://icing.space/2023/web-app-vs-site-vs-hybrid)
 - [Introducing Orb, a WebAssembly DSL for Elixir](https://icing.space/2023/introducing-orb)
 - [Introducing Collected Press](/2023/introducing-collected-press)
 - [Write Once, Integrate Everywhere](/2023/write-once-integrate-everywhere)
