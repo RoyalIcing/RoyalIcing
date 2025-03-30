@@ -6,6 +6,8 @@ date: 2025-03-30
 
 Test-driven development (TDD) is the perfect match for vibe coding.
 
+Here’s how it works:
+
 1. Write out a test (don’t generate this part).
 2. Check that it fails.
 3. Generate the solution.
