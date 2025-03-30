@@ -5,12 +5,14 @@ usage_model = "unbound"
 node_compat = true
 routes = [
     { pattern = "icing.space", custom_domain = true },
+    { pattern = "royalicing.org", custom_domain = true },
+    { pattern = "royalicing.com", custom_domain = true },
     # { pattern = "www.icing.space", custom_domain = true }
 ]
 # env = {}
 
 kv_namespaces = [
-    { binding = "swr_cache", id = "557bf3d3fee24a89b42e989c53e98807", preview_id = "c83cc6aa4cc8450990c96b65120b3981" }
+    { binding = "swr_cache", id = "557bf3d3fee24a89b42e989c53e98807", preview_id = "c83cc6aa4cc8450990c96b65120b3981" },
 ]
 
 [triggers]
