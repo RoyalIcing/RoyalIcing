@@ -26,7 +26,7 @@ Wrong checklist and your plane could crash.
 
 It’s the same with your tests. If you don’t have confidence that they are accurate, then you don’t have confidence that anything else downwind of them is accurate.
 
-That’s why you should be mindful of everything that goes into your tests. You should know exactly what they do. You shouldn’t be confused by what’s happening within them, and they should be free of over-abstraction and conditionals that obscure your understanding.
+That’s why you should be mindful of everything that goes into your tests. You should know exactly what they do. You shouldn’t be confused by what’s happening within them, and they should be [free of over-abstraction and conditionals](https://royalicing.com/2025/automated-tests-accessible-documentation) that obscure your understanding.
 
 You can still use AI-assisted code autocomplete to accelerate your typing. But avoid blindly generating your tests because then they are useless. It’s like receiving a contract and signing it without knowing what you’ve just committed yourself to.
 
