@@ -70,7 +70,7 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    if (url.hostname === "royalicing.org") {
+    if (url.hostname === "royalicing.org" || url.hostname === "icing.space") {
       url.hostname = "royalicing.com";
       return new Response(null, { status: 301, headers: { location: url.toString() } });
     }
