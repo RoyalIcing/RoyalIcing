@@ -70,6 +70,11 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    if (url.hostname === "royalicing.org") {
+      url.hostname = "royalicing.com";
+      return new Response({ status: 301, headers: { location: url.toString() } });
+    }
+
     // TODO: put this into collected press itself?
     if (allowedUnpkgPackages.some(name => url.pathname.startsWith(`/unpkg.com/${name}@`))) {
       return fetch(`https:/${url.pathname}`, { cf: { cacheEverything: true } });
