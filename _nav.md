@@ -1,4 +1,4 @@
 - [Royal Icing](/)
 - [Blog](/blog)
-- [Tools](/tools)
+- [Products](/tools)
 - [Bookshelf](/recommendations)

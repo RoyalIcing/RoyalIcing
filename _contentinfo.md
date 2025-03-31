@@ -1,6 +1,6 @@
 Copyright © 2018–2025 Patrick Smith
 
-- [Tools](/tools)
+- [Products](/tools)
 - [Bookshelf](/recommendations)
 - [Bluesky](https://bsky.app/profile/royalicing.com)
 - [X](https://twitter.com/royalicing)
