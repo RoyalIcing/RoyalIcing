@@ -25,5 +25,5 @@
 
 ## Contact
 
-- I’m @royalicing on [Bluesky](https://bsky.app/profile/royalicing.bsky.social) / [X](https://twitter.com/royalicing) / [Mastodon](http://hachyderm.io/@royalicing). You can refer to me by he/him/Patrick.
+- I’m @royalicing on [Bluesky](https://bsky.app/profile/royalicing.com) / [X](https://twitter.com/royalicing) / [Mastodon](http://hachyderm.io/@royalicing). You can refer to me by he/him/Patrick.
 - My [resume as a PDF](/resume.pdf).
