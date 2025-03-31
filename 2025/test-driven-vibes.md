@@ -18,11 +18,11 @@ I call it test-driven vibes.
 
 ## Why not generate your tests?
 
-Your test is one of the most important parts of your software. It’s like the pre-flight checklist an airplane pilot uses before taking-off. If the checklist is wrong then everything downwind of that may end up incorrect.
+Your test is one of the most important parts of your software. It’s like the pre-flight checklist an airplane pilot uses before taking-off. If the checklist is wrong then everything downwind of that may end up wrong.
 
 Your rudder could be stuck. You could be in bad weather. You could be heading to the wrong location. You could be misreading the wind direction.
 
-Wrong checklist, and your plane could crash.
+Wrong checklist and your plane could crash.
 
 It’s the same with your tests. If you don’t have confidence that they are accurate, then you don’t have confidence that anything else downwind of them is accurate.
 
