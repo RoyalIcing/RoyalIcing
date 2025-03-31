@@ -2,6 +2,7 @@
 
 ## Blog
 
+- [Test Driven Vibes](https://royalicing.com/2025/test-driven-vibes)
 - [Infinite Bicycles for the Mind](https://royalicing.com/2025/infinite-bicycles-for-the-mind)
 - [Automated Tests Should Act as Accessible Documentation](https://royalicing.com/2025/automated-tests-accessible-documentation)
 - [Demos are Forcing Functions](https://royalicing.com/2025/demos-are-forcing-functions)
