@@ -72,7 +72,7 @@ export default {
 
     if (url.hostname === "royalicing.org") {
       url.hostname = "royalicing.com";
-      return new Response({ status: 301, headers: { location: url.toString() } });
+      return new Response(null, { status: 301, headers: { location: url.toString() } });
     }
 
     // TODO: put this into collected press itself?
