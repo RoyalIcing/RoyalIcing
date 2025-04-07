@@ -47,7 +47,7 @@ async function addMetadataToResponse(res, url, sha, { title } = {}) {
         ogImageURL.searchParams.set("t1", title);
         ogImageURL.searchParams.set("t1-color", "#ed64a6");
         // ogImageURL.searchParams.set("t2-color", "#ed64a6");
-        ogImageURL.searchParams.set("website", "icing.space");
+        ogImageURL.searchParams.set("website", "royalicing.com");
         ogImageURL.searchParams.set("author-name", "Patrick Smith");
         const ogImage = ogImageURL.toString();
         element.after(`\n<meta property="og:type" content="${escapeHTML(ogType)}">`, { html: true });

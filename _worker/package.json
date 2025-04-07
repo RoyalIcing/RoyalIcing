@@ -2,16 +2,16 @@
   "name": "icing-space-press",
   "version": "0.0.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231121.0",
+    "@cloudflare/workers-types": "^4.20250407.0",
     "typescript": "^4.9.5",
-    "wrangler": "^3.18.0"
+    "wrangler": "^4.7.2"
   },
   "private": true,
   "scripts": {
     "start": "wrangler dev",
-    "deploy": "wrangler publish"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@collected/press-server": "^0.5.3"
+    "@collected/press-server": "^0.6.1"
   }
 }

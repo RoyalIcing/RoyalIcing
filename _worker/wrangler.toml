@@ -1,8 +1,7 @@
 name = "icing-space-press"
 main = "index.js"
-compatibility_date = "2023-03-09"
-usage_model = "unbound"
-node_compat = true
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
 routes = [
     { pattern = "icing.space", custom_domain = true },
     { pattern = "royalicing.org", custom_domain = true },
