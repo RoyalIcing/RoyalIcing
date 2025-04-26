@@ -2,7 +2,7 @@
 date: 2025-03-24
 ---
 
-# Automated Tests Should Act as Accessible Documentation
+# Automated Tests or Documentation? Why Not Both.
 
 I write [Elixir](https://elixir-lang.org)/[Ash](https://ash-hq.org) apps at [Alembic](http://alembic.com.au). Here is my approach to automated testing, very much influenced by BDD (behavior driven development) and focused on heuristics like “does this make me feel more confident implementing this?” rather than metrics like “have we achieved X% test coverage?”. Also we aim to have improved documentation and accessibility as by-products, using these as lenses to guide writing our tests.
 
