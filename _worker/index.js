@@ -124,6 +124,10 @@ export default {
 
     const source = sourceFromGitHubRepo('RoyalIcing', 'RoyalIcing');
     let lastKnownSHA = await env.swr_cache.get(cacheKeys.headSHA);
+    const options = {
+      siteName: 'Royal Icing — Patrick George Wyndham Smith',
+      baseURL: new URL('https://royalicing.com'),
+    }
 
     const headSHAPromise = source.fetchHeadSHA();
     // Stale-while-revalidate for the HEAD sha.
@@ -136,14 +140,14 @@ export default {
     const sha = await (strategy.startsWith("last-known-sha") ? lastKnownSHA : headSHAPromise);
 
     if (strategy === "last-known-sha.stream") {
-      const [res, done] = await source.serveStreamedURL(url, { commitSHA: sha });
+      const [res, done] = await source.serveStreamedURL(url, { ...options, commitSHA: sha });
       ctx.waitUntil(done);
       // return res;
       return addMetadataToResponse(res, url, sha, { title })
     }
 
     if (strategy !== "nocache") {
-      const res = await source.serveURL(url, { commitSHA: sha });
+      const res = await source.serveURL(url, { ...options, commitSHA: sha });
       return addMetadataToResponse(res, url, sha, { title });
     }
 
@@ -157,7 +161,7 @@ export default {
         cachedContent = await env.swr_cache.get(cacheKeys.pathLatest(url.pathname), { type: "stream" });
       }
 
-      const resPromise = source.serveURL(url, { commitSHA: sha });
+      const resPromise = source.serveURL(url, { ...options, commitSHA: sha });
       ctx.waitUntil(resPromise
         .then(res => res.clone().arrayBuffer())
         .then(content => {
