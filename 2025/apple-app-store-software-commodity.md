@@ -58,4 +58,4 @@ They didn’t just do lazy ports because it would have watered down the raison d
 
 Apple used to differentiate itself with software. It had differentiated first-party software built on differentiated frameworks that allow third-parties to build differentiated apps with best-of-class developer tools. This software story was part of its marketing story. The genius of Steve Jobs’ presentations started with the fact he had something insanely great to show.
 
-Today, Apple is insanely profitable & insanely powerful but I fear that the customer experience is no longer the starting point.
+Today, Apple is insanely profitable & insanely powerful but I fear that the customer experience is no longer its starting point.
