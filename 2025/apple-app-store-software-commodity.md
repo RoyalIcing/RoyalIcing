@@ -1,0 +1,43 @@
+---
+---
+
+# Apple’s App Commodification and the End of Delicious Differentiation
+
+- Apple used to differentiate itself with software:
+  - iLife suite with Garageband
+  - Keynote
+  - Final Cut Pro
+  - Safari
+- This software would influence app makers on its platform, operating system makers for other platforms, and interfaces everywhere.
+- It treats software like it treat hardware suppliers: replaceable widget makers that are pitted against each other to produce higher quality for less cost.
+  - Whether those vendors are sustainable businesses is of little worth to Apple as they can just find another eager vendor.
+  - This multi-sourcing approach https://en.wikipedia.org/wiki/Multisourcing is because Apple doesn’t want another Adobe Photoshop or Microsoft Excel. They want multiple Photoshops and Excels battling to be the best on the platform. They don’t want an Office 365 which is the platform.
+- It owns software distribution and the customer relationship. This makes it difficult for an app maker to developer a deeper relationship, provide extra value, stand-out in the market, and tailor software.
+- Apps like Keynote heavily used the UI & graphics frameworks that were build for the Mac. Apps like Sketch also deeply used these.
+  - This previous graphics advantage is a commodity: you can use Skia with WebGL2 instead to make something just as good that works on all platforms.
+- Frameworks like Electron and React Native abstract away the underlying platform into a generalized system.
+  - An Electron app on the Mac will act the same as it running on Windows, or even in a browser tab. e.g. Notion.
+  - A React Native app on iPhone will work like one on Android.
+- Apple’s design language used to inform every other platform.
+  - Web 2.0 UIs inspired by Aqua.
+  - Hardware inspired by the iMac.
+  - Marketing that was aped across all verticals.
+- Pixelmator Pro could be the last great Mac app.
+  - Modeled after the paradigms from the iWork suite.
+  - Uses Apple’s frameworks to their full ability, from graphics to machine learning.
+  - Now acquired by Apple: Why? Is being acquired by the mothership the best way for Mac-assed-apps to exit, rather than by someone else (Adobe was trying to acquire Figma, not Sketch), or by going public?
+- “It just works” used to be premise of new Apple apps.
+  - Reliability.
+  - Discoverability.
+  - User-friendly.
+  - Unique — differentiated.
+- What was the last great app that Apple made?
+  - Not Invites
+  - Not Freeform
+  - I’d suggest Notes in iOS 9/10 (that’s 2015/2016!).
+- Developer tools & frameworks feel cumbersome, slow, fragile, and complex.
+  - They are made for a local-first world, with cloud being added on.
+  - Web frameworks are made for a cloud-first world, with local-first being added on.
+  - A React component from 7 years ago will still work today.
+  - SwiftUI is trying to homogenize the Apple platforms, which gives you a decent app for less effort, but making something tailored for iPhone or Mac takes more effort.
+- Many of Vision Pro’s built-in apps are just iPad apps. This is like if the original iPhone ran Dashboard widgets — that’s the conceptual root of what Apple did but they rethought apps like Weather with a brand new design & implementation that was tailored for the touch screen medium and handheld screen size.
