@@ -34,11 +34,11 @@ This previous graphics advantage has become a commodity: instead you can use Goo
 
 Frameworks like Electron and React Native abstract away the underlying platform into an approximation. An Electron app on the Mac will largely act the same as it running on Windows or Linux. You could even run it as a tab in your browser. e.g. Notion, Slack, Discord just to mention a few.
 
-Pixelmator Pro could be the last great Mac app, having being [absorbed](https://www.pixelmator.com/blog/2024/11/01/a-new-home-for-pixelmator) into its host. They had succeeded by being fluent in each platform, modeling themselves closely with the paradigms from the iWork suite on the Mac/iPad/iPhone. They used Apple’s frameworks to their full ability, from real time GPU rendering to machine learning.
+Pixelmator Pro could be the last great Mac app, having being [absorbed](https://www.pixelmator.com/blog/2024/11/01/a-new-home-for-pixelmator) into its host. They had succeeded by being fluent in each platform, modeling themselves after the iWork suite’s paradigms on the Mac/iPad/iPhone. They used Apple’s frameworks to their full ability, from real time GPU rendering to machine learning, surpassing what could be done in a web app for a long time.
 
-Is being acquired by the mothership the best way for Mac-assed-apps to exit, rather than by another business, or by going public? Note that Adobe tried to acquire Figma, not Sketch.
+Is being merged into the mothership the best way for [Mac-assed-apps](https://inessential.com/2020/03/19/proxyman.html) to exit, rather than acquired by another business, or by going public? Note that Adobe tried to acquire web-app Figma, not Mac-app Sketch.
 
-“It just works” used to be premise of new Apple apps. In my mind, that stood for user-friendliness, intuitive discoverability, and reliability. This was a differentiation from other software which often didn’t just work: they were often confusing instead of intuitive, prone to err instead of being rock solid, company-centered instead of customer-centered.
+“It just works” used to be premise of new Apple apps. In my mind, that stood for user-friendliness, intuitive discoverability, and reliability. This was a differentiation from other software which often didn’t just work: confusing instead of intuitive, prone to err instead of being rock-solid, company-centered not customer-centered.
 
 What was the last great app that Apple made? Invites from 2024? Forgettable. Freeform? No one uses it. I’d suggest the Notes reboot in iOS 9. That’s a decade ago!
 
