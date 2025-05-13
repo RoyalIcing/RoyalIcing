@@ -10,7 +10,7 @@ Okay, we still have these. But all these apps are from the Steve Jobs era. From 
 
 What Apple did with iLife, iWork, and its pro tools would influence app makers for the Mac. You could see where the design puck was going by downloading the latest iTunes or QuickTime and studying its UI paradigms.
 
-Apple didn’t just influence its own third-party developers, but other makers for other platforms, other operating systems, and interfaces everywhere. The iMac lead to the end of the 20th century being flooded with rainbow-colored unapologetically-plastic hardware. Web 2.0 designs were heavily inspired by Mac OS X’s Aqua and the capabilities of desktop-class apps. And Apple’s marketing was aped across all verticals, from the iPod’s billboards and TV ads, to its live stage events still used as the prototype for corporate announcements today.
+Apple didn’t just influence its own third-party developers, but other makers for other platforms, other operating systems, and interfaces everywhere. The iMac lead to the end of the 20th century being flooded with rainbow-colored unapologetically-plastic hardware. Web 2.0 designs were heavily inspired by Mac OS X’s Aqua and the capabilities of desktop-class apps. And Apple’s marketing was aped across all verticals, from the iPod’s billboards & TV ads, to its live stage events still used as the prototype for corporate announcements today.
 
 Apple’s design & marketing language was borrowed, sometimes pidgin-style, by many a business.
 
