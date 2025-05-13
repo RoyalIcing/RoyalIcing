@@ -50,7 +50,7 @@ Most of Apple’s frameworks were made in a local-first, file-system world, with
 
 A React component from 7 years ago will still work today. My Swift code from that time no longer compiles.
 
-SwiftUI is trying to homogenize the Apple platforms, which gives you a decent app for less effort, especially if it’s cross-Apple-platform. But making something tailored for iPad or especially Mac feels like you are trying to drive a rental hatchback off-road. It’s extremely fast for what it’s been designed to do, but falls apart on anything irregular. Irregular software is where the magic is, that’s what the [misfits](https://www.goodreads.com/quotes/924-here-s-to-the-crazy-ones-the-misfits-the-rebels-the) make.
+SwiftUI is trying to homogenize the Apple platforms, which gives you a decent app for less effort, especially if it’s cross-Apple-platform. But making something tailored for iPad or especially Mac feels like you are trying to drive a rental hatchback off-road. It’s extremely fast for what it’s been designed to do, but falls apart on anything irregular. Irregular software is where the magic is, that’s what the [misfits make](https://www.goodreads.com/quotes/924-here-s-to-the-crazy-ones-the-misfits-the-rebels-the).
 
 Many of Vision Pro’s built-in apps are just iPad apps. This is like if the original iPhone ran Dashboard widgets! Sure, that’s the genius conceptual root of where Apple started but they rethought apps like Weather with a brand new design & implementation that was tailored made for a handheld touch screen.
 
