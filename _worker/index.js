@@ -75,6 +75,11 @@ export default {
       return new Response(null, { status: 301, headers: { location: url.toString() } });
     }
 
+    if (url.pathname === "/2025/apple-app-store-software-commodity") {
+      url.pathname = "/2025/apple-app-commodification";
+      return new Response(null, { status: 301, headers: { location: url.toString() } });
+    }
+
     // TODO: put this into collected press itself?
     if (allowedUnpkgPackages.some(name => url.pathname.startsWith(`/unpkg.com/${name}@`))) {
       return fetch(`https:/${url.pathname}`, { cf: { cacheEverything: true } });
