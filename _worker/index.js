@@ -80,6 +80,11 @@ export default {
       return new Response(null, { status: 301, headers: { location: url.toString() } });
     }
 
+    if (url.pathname === "/2025/infinite-bicycles-for-the-mind") {
+      url.pathname = "/2025/electric-bicycles-for-the-mind";
+      return new Response(null, { status: 301, headers: { location: url.toString() } });
+    }
+
     // TODO: put this into collected press itself?
     if (allowedUnpkgPackages.some(name => url.pathname.startsWith(`/unpkg.com/${name}@`))) {
       return fetch(`https:/${url.pathname}`, { cf: { cacheEverything: true } });
