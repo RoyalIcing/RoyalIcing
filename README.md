@@ -4,7 +4,7 @@
 
 - [Apple’s App Commodification and the End of Delicious Differentiation](https://royalicing.com/2025/apple-app-commodification)
 - [Test Driven Vibes](https://royalicing.com/2025/test-driven-vibes)
-- [Infinite Bicycles for the Mind](https://royalicing.com/2025/infinite-bicycles-for-the-mind)
+- [Electric Bicycles for the Mind](https://royalicing.com/2025/electric-bicycles-for-the-mind)
 - [Automated Tests or Documentation? Why Not Both](https://royalicing.com/2025/automated-tests-accessible-documentation)
 - [Demos are Forcing Functions](https://royalicing.com/2025/demos-are-forcing-functions)
 - [How Components and Behavior-Driven Tests Overlap](https://royalicing.com/2024/how-components-and-bdd-overlap)

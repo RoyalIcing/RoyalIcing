@@ -2,7 +2,7 @@
 date: 2025-03-27
 ---
 
-# Infinite Bicycles for the Mind
+# Electric Bicycles for the Mind
 
 Information theory has this concept of “surprise”. If a baby says “goo goo gaa gaa” all the time you’d be very surprised if the next words out of its mouth were “all religions, arts and sciences are branches of the same tree.” Woah there, little Einstein…
 
@@ -18,7 +18,7 @@ So far my usage of generative AI in my programming career have been as a souped-
 
 Via Copilot learning what I’m likely to write and me learning what Copilot is likely to suggest, I’m able to code more quickly than before. Because I have an expectation of what I want written, the output is completely predictable and unsurprising to me. I just get it done faster.
 
-Compare this to when I’ve asked ChatGPT about why objects emit infrared light — a topic I know little about. What it writes for me is quite surprising because I didn’t know exactly what to expect. It tells me “Infrared photons are emitted by electrons when they lose energy due to thermal motion.” Is this true? I‘m not quite sure.
+Compare this to when I’ve asked ChatGPT about why objects emit infrared light (what night vision goggles see) — a topic I know little about. What it writes for me is quite surprising because I didn’t know exactly what to expect. It tells me “Infrared photons are emitted by electrons when they lose energy due to thermal motion.” Is this true? I‘m not quite sure.
 
 I‘m staring at concepts like “energy states” and weird symbols and familiar words like “heat” but used in an unfamiliar context. Sound familiar? I’ve entered a world I don’t really understand. The surprise is high, and I‘ve no idea if it’s accurate or what it’s going to say next. If I was to change a word there’s a good chance I’ve introduced a mistake.
 
@@ -32,6 +32,6 @@ Or are you in an **exploratory mode**, in uncharted seas not knowing whether to 
 
 In your familiar mode the entropy is low. You type a few keys and get lots of predictable signal out. What you see is anticipated, and if there is any code I didn’t bargain for I can fix it or generate anew. The vibe is _low surprise_, and you can keep rolling the dice until you get what you expect.
 
-In your exploratory mode the entropy starts high. The goal is to inform your mind or deliver the output elsewhere. It’s bespoke Wikipedia on command, with a similar risk of inaccuracies. The output is possibly wrong and you won’t know how to directly fix it, though over time you can learn what tends to break. The vibe is _high surprise_.
+In your exploratory mode the entropy starts high. The goal is to inform your mind or deliver the output elsewhere. It’s bespoke Wikipedia on command, with a similar risk of inaccuracies. The output is possibly wrong and you won’t know how to directly fix it, though over time you can learn what tends to work. The vibe is _high surprise_.
 
-Both modes are marvels. They’re infinite bicycles for the mind. Just ask yourself whether you’re on a path you’ve ridden before.
+Both modes are marvels. They’re electric bicycles for the mind. Before jumping on just ask yourself whether you’re on a path you’ve ridden before.
