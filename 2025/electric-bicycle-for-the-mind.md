@@ -2,7 +2,11 @@
 date: 2025-03-27
 ---
 
-# Electric Bicycles for the Mind
+# Electric Bicycle for the Mind
+
+Steve Jobs coined the idea of the “bicycle for the mind”, where computers could take a person a lot further than they could alone, just like a bicycle could let you travel further, more quickly, and more efficiently than running. [He said](https://www.youtube.com/watch?v=NjIhmzU0Y8Y) “we can fashion tools that amplify these inherent abilities that we have to spectacular magnitudes. So for me a computer has always been a bicycle for the mind.”
+
+AI can accelerate you even further. It can also get you totally lost more quickly too. Let me explain with another analogy…
 
 Information theory has this concept of “surprise”. If a baby says “goo goo gaa gaa” all the time you’d be very surprised if the next words out of its mouth were “all religions, arts and sciences are branches of the same tree.” Woah there, little Einstein…
 
