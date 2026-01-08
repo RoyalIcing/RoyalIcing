@@ -2,6 +2,7 @@
 
 ## Blog
 
+- [Imperative Core, Sandboxed Shell](https://royalicing.com/2026/imperative-core-sandboxed-shell)
 - [Apple’s App Commodification and the End of Delicious Differentiation](https://royalicing.com/2025/apple-app-commodification)
 - [Test Driven Vibes](https://royalicing.com/2025/test-driven-vibes)
 - [Electric Bicycle for the Mind](https://royalicing.com/2025/electric-bicycle-for-the-mind)
