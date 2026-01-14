@@ -34,6 +34,8 @@ Light and electricity are the ultimate levers. Press here and the entire world m
 
 We all have these levers. The humans that is, I’m not sure the animals feel left out.
 
-Who has the largest levers? Who has the greatest ability to bust levers? Who or what stops us from changing our levers? Who is trying to get me to use my lever for their benefit?
+From flesh to hardware to software and back to flesh.
 
-What makes these levers so powerful? They feel so light yet can lift so much. It’s probably a good thing the cats can’t use them.
+Who has the largest levers? Who has the greatest abilities to bust levers? Who and what stops us from changing our levers? Who is trying to get me to use my lever for their benefit?
+
+These levers feel so light yet can lift so much. It’s probably a good thing the cats can’t use them.
