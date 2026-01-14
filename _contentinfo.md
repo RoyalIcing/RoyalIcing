@@ -1,4 +1,4 @@
-Copyright © 2018–2025 Patrick Smith
+Copyright © 2018–2026 Patrick Smith
 
 - [Apps](/tools)
 - [Bookshelf](/recommendations)
