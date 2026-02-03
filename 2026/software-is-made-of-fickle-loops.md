@@ -107,7 +107,7 @@ What makes software development hard is that these are fickle: they are slow, no
 - Loop: collect data → anonymize parts → store/analyze → comply with requests & laws → delete data
 - Why it gets fickle: changing regulations, data breaches, law enforcement requests, encryption.
 
-⸻
+---
 
 ## Our loops are getting more encumbered and fickle
 
