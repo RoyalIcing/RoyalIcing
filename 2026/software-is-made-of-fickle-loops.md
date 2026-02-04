@@ -10,102 +10,41 @@ What makes software development hard is that these are fickle: they are slow, no
 
 ## Code
 
-### Code compilation is a fickle loop of source code into executable instructions
-
-- Loop: edit → compile → link → run
-- Why it gets fickle: syntax errors, type errors, missing dependencies, configuration mistakes, language breaking changes.
-
-### CI is a fickle loop of flaky tests on a remote machine
-
-- Loop: install → build → test → fail… → fix… → pass
-- Why it gets fickle: flaky tests, slow feedback, dependency drift.
-
-### Dependencies are a fickle loop of independent code changes
-
-- Loop: new release → upgrade → fix breakages → git commit
-- Why it gets fickle: transitive dependencies and ecosystem churn.
-
-### Code review is a fickle loop of human opinions
-
-- Loop: pull request → review… → revise… → merge
-- Why it gets fickle: human delays, inconsistent standards, unclear feedback.
-- Dependency: faster CI loops improve code review loops.
-
-### Tech debt is a fickle loop of labor applied to a running software system
-
-- Loop: add features → fix bugs → meet goals → hire staff
-- Why it gets fickle: changing requirements, staff turnover, lack of system understanding.
-- Dependency: slows all other loops.
+| Loop                                                                          | Steps                                              | Fickleness                                                                                          | Dependencies/Notes                        |
+| ----------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Code compilation is a fickle loop of source code into executable instructions | edit → compile → link → run                        | syntax errors, type errors, missing dependencies, configuration mistakes, language breaking changes |                                           |
+| CI is a fickle loop of flaky tests on a remote machine                        | install → build → test → fail… → fix… → pass       | flaky tests, slow feedback, dependency drift                                                        |                                           |
+| Dependencies are a fickle loop of independent code changes                    | new release → upgrade → fix breakages → git commit | transitive dependencies and ecosystem churn                                                         |                                           |
+| Code review is a fickle loop of human opinions                                | pull request → review… → revise… → merge           | human delays, inconsistent standards, unclear feedback                                              | faster CI loops improve code review loops |
+| Tech debt is a fickle loop of labor applied to a running software system      | add features → fix bugs → meet goals → hire staff  | changing requirements, staff turnover, lack of system understanding                                 | slows all other loops                     |
 
 ## Networks & storage
 
-### Databases are a loop of writes with durability guarantees and loops of consistent reads
-
-- Loop: connect → open → write → commit → replicate
-- Why it gets fickle: network partitions, crashes, conflicts.
-
-### Web servers are a fickle loop of HTTP requests
-
-- Loop: request → handle → cache → respond
-- Where fickleness appears: timeouts, partial failure, server load, poor Wi-Fi or cellular connections.
-- Dependency: relies on TCP loops.
-
-### RPC is a fickle loop of requests over unreliable networks
-
-- Loop: request → timeout → retry/backoff → acknowledged success/fail
-- Where fickleness appears: timeouts, network partitions, server overload.
-
-### TCP is a loop of packets over unreliable networks
-
-- Loop: send → ack/loss → retransmit/adjust
-- Where fickleness appears: packet loss, network congestion, variable latency.
-- Point: reliability is produced via repetition and feedback, not assumed.
+| Loop                                                                                    | Steps                                                         | Fickleness                                                                 | Dependencies/Notes                                               |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Databases are a loop of writes with durability guarantees and loops of consistent reads | connect → open → write → commit → replicate                   | network partitions, crashes, conflicts                                     |                                                                  |
+| Web servers are a fickle loop of HTTP requests                                          | request → handle → cache → respond                            | timeouts, partial failure, server load, poor Wi-Fi or cellular connections | relies on TCP loops                                              |
+| RPC is a fickle loop of requests over unreliable networks                               | request → timeout → retry/backoff → acknowledged success/fail | timeouts, network partitions, server overload                              |                                                                  |
+| TCP is a fickle loop of packets over unreliable networks                                | send → ack/loss → retransmit/adjust                           | packet loss, network congestion, variable latency                          | reliability is produced via repetition and feedback, not assumed |
 
 ## Product & users
 
-### Iterative Design and Lean Startup are fickle loops of delivering valuable software
-
-- Lean startup loop: build → measure → learn
-- Double-diamond loop: discover → define → develop → deliver
-- Why they get fickle: noisy signals, misleading or lagging proxy metrics, shifting market conditions, changing user behavior, conflicting management incentives, feature creep.
-
-### User sessions are a fickle loop of authentication and engagement
-
-- Loop: login → interact → timeout/logout
-- Why it gets fickle: forgotten passwords, session expirations, engagement drop-offs.
-
-### Subscriptions are a fickle loop of billing and user retention
-
-- Loop: bill → renew/cancel → plan changes
-- Why it gets fickle: payment failures, churn, pricing and plan changes.
-- Dependency: billing state gates the user session loop.
-
-### Enterprise contracts are a fickle loop of negotiations and renewals
-
-- Loop: negotiate → sign → deliver → renew
-- Why it gets fickle: changing requirements, legal reviews, budget cycles.
-
-### Accessibility is a fickle loop of design constraints, legal requirements, and user needs
-
-- Loop: design → implement → test with users → verify compliance → revise
-- Why it gets fickle: diverse user needs, evolving standards, limited testing resources, conflicting best practices.
+| Loop                                                                                     | Steps                                                                                        | Fickleness                                                                                                                                               | Dependencies/Notes                        |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Lean startup is a fickle loop of validating product-market fit                           | build → measure → learn                                                                       | misleading or lagging proxy metrics, shifting market conditions, changing user behavior, conflicting management incentives |                                           |
+| Double-diamond is a fickle loop of exploring and narrowing problem/solution space        | discover → define → develop → deliver                                                         | noisy signals from research, feature creep, conflicting management incentives, shifting user behavior |                                           |
+| User sessions are a fickle loop of authentication and engagement                         | login → interact → timeout/logout                                                            | forgotten passwords, session expirations, engagement drop-offs                                                                                           |                                           |
+| Subscriptions are a fickle loop of billing and user retention                            | bill → renew/cancel → plan changes                                                           | payment failures, churn, pricing and plan changes                                                                                                        | billing state gates the user session loop |
+| Enterprise contracts are a fickle loop of negotiations and renewals                      | negotiate → sign → deliver → renew                                                           | changing requirements, legal reviews, budget cycles                                                                                                      |                                           |
+| Accessibility is a fickle loop of design constraints, legal requirements, and user needs | design → implement → test with users → verify compliance → revise                            | diverse user needs, evolving standards, limited testing resources, conflicting best practices                                                            |                                           |
 
 ## Trust
 
-### Security is a fickle loop of attack and defense
-
-- Loop: zero-day/attack → detect → mitigate → patch → monitor
-- Why it gets fickle: adversarial inputs, supply chain risks, human error, complex systems.
-
-### Compliance is a fickle loop of interpreting laws and auditing
-
-- Loop: regulation changes → implement → audit → report
-- Why it gets fickle: evolving regulations, ambiguous laws, regional differences, more reporting requirements.
-
-### Privacy is a fickle loop of data collection and user consent
-
-- Loop: collect data → anonymize parts → store/analyze → comply with requests & laws → delete data
-- Why it gets fickle: changing regulations, data breaches, law enforcement requests, encryption.
+| Loop                                                          | Steps                                                                                      | Fickleness                                                                              | Dependencies/Notes |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------------------ |
+| Security is a fickle loop of attack and defense               | zero-day/attack → detect → mitigate → patch → monitor                                      | adversarial inputs, supply chain risks, human error, complex systems                    |                    |
+| Compliance is a fickle loop of interpreting laws and auditing | regulation changes → implement → audit → report                                            | evolving regulations, ambiguous laws, regional differences, more reporting requirements |                    |
+| Privacy is a fickle loop of data collection and user consent  | collect data → anonymize parts → store/analyze → comply with requests & laws → delete data | changing regulations, data breaches, law enforcement requests, encryption               |                    |
 
 ---
 
